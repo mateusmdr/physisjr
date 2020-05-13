@@ -1,0 +1,33 @@
+html{
+	height: 100%;
+}
+
+
+header{
+	display: inline-block;
+	width: 100%; /*Responsividade horizontal do menu*/
+	height: 7vh; /*Responsividade vertical do menu*/	
+	text-align: center; /*Centraliza a tag nav horizontalmente*/
+	background-color: rgb(200,200,200);
+}
+
+#logo {
+	position: relative;	
+	float: left; /*Coloca a imagem à esquerda*/
+	height: inherit; /*Define a altura como sendo igual à tag header*/
+}
+
+nav {
+	position: relative;	
+	top: 50%; /*Centraliza a tag nav verticalmente*/
+	transform: translateY(-50%); /*Centraliza a tag nav verticalmente*/
+}
+
+a.menuLink{
+	text-decoration: none;
+	color: black;
+	font-family: sans-serif;
+	font-size: 18px;
+	padding: 0 20px; /*Espaça os links*/
+}
+
