@@ -2,32 +2,153 @@ html{
 	height: 100%;
 }
 
+/*Começo do cabeçalho*/
+/*-------------------*/
 
 header{
 	display: inline-block;
-	width: 100%; /*Responsividade horizontal do menu*/
+	width: 100vw; /*Responsividade horizontal do menu*/
 	height: 7vh; /*Responsividade vertical do menu*/	
-	text-align: center; /*Centraliza a tag nav horizontalmente*/
 	background-color: rgb(200,200,200);
 }
 
-#logo {
+header > nav {
+	text-align: right; /*Coloca o texto da tag nav à direita*/
+	margin-right: 20px;
+}
+
+#logo,header>a {
 	position: relative;	
 	float: left; /*Coloca a imagem à esquerda*/
 	height: inherit; /*Define a altura como sendo igual à tag header*/
-}
-
-nav {
-	position: relative;	
-	top: 50%; /*Centraliza a tag nav verticalmente*/
-	transform: translateY(-50%); /*Centraliza a tag nav verticalmente*/
 }
 
 a.menuLink{
 	text-decoration: none;
 	color: black;
 	font-family: sans-serif;
-	font-size: 18px;
-	padding: 0 20px; /*Espaça os links*/
+	font-size: 1.5em;
+	padding: 5px 20px; /*Espaça os links*/
+	line-height: 7vh; /*Centraliza os links verticalmente de maneira responsiva*/
+	border-radius: 5px; /*Arredonda a borda*/
 }
 
+a.menuLink:hover {
+	background-color: green;
+	color: white;
+}
+
+/*Fim do cabeçalho*/
+/*----------------*/
+
+/*Começo da apresentação*/
+/*----------------------*/
+
+div.apresentacao {
+	width: 100vw;
+	height: 600px;
+	/*background-color: gold;*/
+	padding: 20px 0;
+	margin: 0 auto;
+	background-image: url("https://png.pngtree.com/thumb_back/fw800/20151013/pngtree-Range-Mountain-Landscape-Mountains-background-photo-226735.jpg");
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-attachment: fixed;
+	background-position: center;
+}
+
+hgroup.apresentacao {
+	display: block;
+	width: 80%; /*Responsividade dos textos*/
+	max-width: 800px; /*Responsividade dos textos*/
+	background-color: red;
+	margin: 0 auto; /*Centraliza o hgroup na viewport*/
+	text-align: center; /*Centraliza os textos dentro do hgroup*/
+}
+
+h1.apresentacao {
+	font: normal 4.5em tahoma,sans-serif;
+	padding-bottom: 50px;
+}
+
+h2.apresentacao {
+	font: normal 3em tahoma,sans-serif;
+}
+
+a.apresentacao {
+	display: block;
+	width: 80%;
+	max-width: 600px;
+	text-align: center;
+	margin: 100px auto;
+	font: bold 2.5em tahoma,sans-serif;
+	color: white;
+	background-color: black;
+	border-radius: 5px;
+	text-decoration: none;
+}
+
+div.contato {
+	display: block;
+	width: 100vw;
+	text-align: center;
+}
+
+div.contato-icon{
+	display: inline-block;
+	width: 50px;
+	height: 50px;
+	background-color: blue;
+	margin: 0 20px;
+}
+
+/*Fim da apresentação*/
+/*-------------------*/
+
+/*Começo do portfólio*/
+/*-------------------*/
+
+div.portfolio {
+	width: 100vw;
+	text-align: center;
+}
+
+hgroup.portfolio {
+	display: block;
+	width: 80%; /*Responsividade dos textos*/
+	max-width: 800px; /*Responsividade dos textos*/
+	background-color: red;
+	margin: 50px auto; /*Centraliza o hgroup na viewport*/
+	text-align: center; /*Centraliza os textos dentro do hgroup*/
+}
+
+h1.portfolio {
+	font: normal 3em tahoma,sans-serif;
+	padding-bottom: 50px;
+}
+
+h2.portfolio {
+	font: normal 2.5em tahoma,sans-serif;
+}
+
+div.portfolio-linha{
+	display: block;
+	text-align: center;
+	margin-bottom: 500px;
+}
+
+div.portfolio-item{
+	display: inline-block;
+	width: 100px;
+	height: 100px;
+	background-color: purple;
+	margin: 0 100px;
+}
+
+/*Fim do portfólio*/
+/*----------------*/
+
+div,nav,header {
+	border: 2px solid red;
+	box-sizing: border-box;
+}
