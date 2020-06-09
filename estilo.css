@@ -1,5 +1,6 @@
-html{
+html,body{
 	height: 100%;
+	overflow-x: hidden; /*Corrigindo um bug inexplicável do scroll horizontal*/
 }
 
 /*Começo do cabeçalho*/
@@ -8,7 +9,7 @@ html{
 header{
 	display: inline-block;
 	width: 100vw; /*Responsividade horizontal do menu*/
-	height: 7vh; /*Responsividade vertical do menu*/	
+	height: 8vh; /*Responsividade vertical do menu*/	
 	background-color: rgb(200,200,200);
 }
 
@@ -29,7 +30,7 @@ a.menuLink{
 	font-family: sans-serif;
 	font-size: 1.5em;
 	padding: 5px 20px; /*Espaça os links*/
-	line-height: 7vh; /*Centraliza os links verticalmente de maneira responsiva*/
+	line-height: 8vh; /*Centraliza os links verticalmente de maneira responsiva*/
 	border-radius: 5px; /*Arredonda a borda*/
 }
 
@@ -52,7 +53,7 @@ div.apresentacao {
 	margin: 0 auto;
 	background-image: url("https://png.pngtree.com/thumb_back/fw800/20151013/pngtree-Range-Mountain-Landscape-Mountains-background-photo-226735.jpg");
 	background-repeat: no-repeat;
-	background-size: contain;
+	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
 }
@@ -134,7 +135,6 @@ h2.portfolio {
 div.portfolio-linha{
 	display: block;
 	text-align: center;
-	margin-bottom: 500px;
 }
 
 div.portfolio-item{
@@ -147,8 +147,3 @@ div.portfolio-item{
 
 /*Fim do portfólio*/
 /*----------------*/
-
-div,nav,header {
-	border: 2px solid red;
-	box-sizing: border-box;
-}
