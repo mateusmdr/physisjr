@@ -32,4 +32,8 @@
 	h2.portfolio{
 		font-size: 1.2em;
 	}
+
+	ul.portfolio > div.row:first-of-type > li:last-child {
+		margin-bottom: 0
+	}
 }
