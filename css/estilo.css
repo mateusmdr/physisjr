@@ -204,11 +204,11 @@ img.galeria {
 
 @media only and screen (min-width: 800px){
 	img.galeria:hover{
-	width: 30vw;
-	height: 30vw;
-	border: solid 1px rgb(200,200,200);
-	padding: 3px;
-	transition: .5s;
+		width: 30vw;
+		height: 30vw;
+		border: solid 1px rgb(200,200,200);
+		padding: 3px;
+		transition: .5s;
 	}
 }
 
