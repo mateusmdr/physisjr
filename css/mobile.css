@@ -1,0 +1,35 @@
+@media only screen and (max-width: 800px){
+	
+	.title {
+		font-size: 4em;
+		padding: 35px 0;	
+		font-family: 'Raleway',sans-serif;
+		font-weight: bold;
+		color: #750000;
+	}
+
+	a.menuLink {
+		display: none;
+	}
+	a.menuLink:last-child{
+		display: inline-block;
+		padding: 0 10px;
+	}
+
+	h1.apresentacao {
+		font-size: 3.5em;
+	}
+	h2.apresentacao{
+		font-size: 2em;
+	}
+	div.contato-button{
+		margin-top: 80px;
+	}
+	a.contato-button{
+		font-size: 1.5em;
+	}
+
+	h2.portfolio{
+		font-size: 1.2em;
+	}
+}

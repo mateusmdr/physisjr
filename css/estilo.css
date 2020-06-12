@@ -5,6 +5,26 @@ a{ /*Padronizando as fontes*/
 	text-decoration: none;
 }
 
+.title {
+	font-size: 4em;
+	padding: 50px 0;	
+	font-family: 'Raleway',sans-serif;
+	font-weight: bold;
+	color: #750000;
+}
+
+.container{
+	margin: 0 auto; /*Centraliza o hgroup na viewport*/
+	text-align: center; /*Centraliza os textos dentro do hgroup*/
+}
+
+.sub-container {
+	width: 80%; /*Responsividade dos textos*/
+	max-width: 800px; /*Responsividade dos textos*/
+	margin: 0px auto; /*Centraliza o hgroup na viewport*/
+	text-align: center; /*Centraliza os textos dentro do hgroup*/
+}
+
 
 /*Começo do cabeçalho*/
 /*-------------------*/
@@ -14,7 +34,7 @@ header{
 	display: block;
 	background-color: white;
 	width: 100%; /*Responsividade horizontal do menu*/
-	height: 8vh; /*Responsividade vertical do menu*/
+	padding: 5px 0; /*Dá um espaço entre a header e as fronteiras da página*/
 }
 
 header > nav {
@@ -27,7 +47,7 @@ header > nav {
 	padding-left: 20px;
 	position: relative;	
 	float: left; /*Coloca a imagem à esquerda*/
-	height: inherit; /*Define a altura como sendo igual à tag header*/
+	height: 8vh; /*Responsividade vertical do menu*/
 }
 
 a.menuLink{
@@ -47,12 +67,6 @@ a.menuLink:last-of-type{ /*Botão de contato*/
 	color: white;
 }
 
-@media only screen and (max-width: 800px){
-	nav#menu {
-		display: none;
-	}
-}
-
 /*Fim do cabeçalho*/
 /*----------------*/
 
@@ -60,26 +74,18 @@ a.menuLink:last-of-type{ /*Botão de contato*/
 /*----------------------*/
 
 div.apresentacao {
-	background-image: url("./media/background.png");
+	background-image: url("../media/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+	text-align: center;
 }
 
 div#opacidade {
-	padding: calc(8% + 30px) 0;
+	padding: calc(8vh + 75px) 0 calc(8vh + 65px); /*Abaixa a div para não ser sobreposta pelo header*/
 	width: 100%;
-	height: 100%;
 	background-color: rgba(50,50,50,.8);
-}
-
-hgroup.apresentacao {
-	display: block;
-	width: 80%; /*Responsividade dos textos*/
-	max-width: 800px; /*Responsividade dos textos*/
-	margin: 0 auto; /*Centraliza o hgroup na viewport*/
-	text-align: center; /*Centraliza os textos dentro do hgroup*/
 }
 
 h1.apresentacao {
@@ -97,15 +103,15 @@ h2.apresentacao {
 	color: white;
 }
 
-div.contato{
+div.contato-button{
 	margin-top: 150px;
 	text-align: center;
 }
 
-a.contato {
+a.contato-button {
 	display: inline;
 	text-align: center;
-	padding: 0 10px;
+	padding: 10px;
 	font-size: 2.5em;
 	color: white;
 	background-color: #750000;
@@ -119,59 +125,97 @@ a.contato {
 /*Começo do portfólio*/
 /*-------------------*/
 
-div.portfolio {
-	text-align: center;
-}
-
-hgroup.portfolio {
-	display: block;
-	width: 80%; /*Responsividade dos textos*/
-	max-width: 800px; /*Responsividade dos textos*/
-	margin: 50px auto; /*Centraliza o hgroup na viewport*/
-	text-align: center; /*Centraliza os textos dentro do hgroup*/
-}
-
-h1.portfolio {
-	font-size: 3em;
-	padding-bottom: 50px;
-}
-
-h2.portfolio {
-	font-size: 2.5em;
-}
-
-div.portfolio-linha{
-	text-align: center;
-}
-
-div.portfolio-item{
+h2.portfolio {	
 	display: inline-block;
-	margin: 0 100px;
-	height: 100px;
+	font-family: 'Raleway',sans-serif;
+	font-size: 1.5em;
+	background-color: #750000;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
 }
 
-img.portfolio-item{
+ul.portfolio{
+	margin-top: 50px;
+}
+
+li.portfolio{
+	display: inline-block;
+	margin: 10px 20px 30px 20px;
+	box-sizing: content-box;
+	padding: 20px;
+	border: solid 1px rgba(200,200,200,.8);
+	border-radius: 20px
+}
+
+img.portfolio{
 	display: inline-block;
 	width: 100px;
 	height: 100px;
-	margin-right: 10px;
 }
 
-p.portfolio-item {
-	display: inline-block;
-	line-height: 100px;
+h3.portfolio {
+	display: block;
+	width: 250px;
+	padding-top: 20px;
+	font-size: 1.5em;
+	font-family: 'Raleway',sans-serif;
+}
+
+h4.portfolio {
+	
 }
 
 /*Fim do portfólio*/
 /*----------------*/
+
+/*Começo do sobre nós*/
+/*-------------------*/
+
+p.sobre{
+	font-size: 1.2em;
+	font-family: 'tahoma',sans-serif;
+	color: black;
+	text-align: justify;
+	margin: 15px 0;
+}
+
+img.galeria {
+	width: 150px;
+	height: 150px;
+	margin: 25px;
+}
+
+img.galeria:hover {
+	width: 200px;
+	height: 200px;
+	transition: .5s;
+}
+
+/*Fim do sobre nós*/
+/*----------------*/
+
+
+/*Começo do contato*/
+/*-----------------*/
+
+	div.mapa {
+		width: 100%;
+		height: 150px;
+		background-color: red;
+	}
+
+/*Fim do contato*/
+/*--------------*/
 
 
 /*Começo do rodapé*/
 /*----------------*/
 
 div.rodape{
+	width: 100%;
 	background-color: rgb(100,100,100);
-	margin-top: 300px;
+	padding-top: 50px;
 }
 
 div.social {
@@ -187,7 +231,7 @@ img.social{
 
 img.social:first-child,img.social:last-child{
 	background-color: white;
-	border-radius: 8px;
+	border-radius: 10px;
 }
 
 /*Fim do rodapé*/

@@ -3,8 +3,11 @@
 <head>
 	<meta charset="utf-8">
 	<title>Physis Jr.</title>
-	<link rel="stylesheet" type="text/css" href="minireset.css">
-	<link rel="stylesheet" type="text/css" href="estilo.css">
+	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
+	<link rel="stylesheet" type="text/css" href="./css/estilo.css">
+	<link rel="stylesheet" type="text/css" href="./css/mobile.css">
+
+	<meta name="viewport" content="width=device-width">
 
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
 </head>
@@ -32,30 +35,88 @@
 				<h2 class="apresentacao">Engenharia e Tecnologia</h2>
 			</hgroup>		
 
-			<div class="contato">
-				<a class="contato" href="">Entre em contato</a>
+			<div class="contato-button">
+				<a class="contato-button" href="">Entre em contato</a>
 			</div>
 		</div>
 	</div>
 
 	<!--Portfólio-->
-	<div class="portfolio">
-		<hgroup class="portfolio">
-			<h1 class="portfolio">Serviços</h1>
-			<h2 class="portfolio">mensagem blablabla blablabla</h2>
+	<div class="portfolio container">
+		<hgroup class="portfolio sub-container">
+			<h1 class="portfolio title">Serviços</h1>
+			<a class="portfolio" href=""><h2 class="portfolio">Realize seu diagnóstico gratuitamente!</h2></a>
 		</hgroup>
 
-		<div class="portfolio-linha">
-			<div class="portfolio-item">
-				<img class="portfolio-item" src=""><p class="portfolio-item">Cursos de Excel</p>
+		<ul class="portfolio">
+			<li class="portfolio">
+				<img class="portfolio" src="./media/estoque.svg">
+				<h3 class="portfolio">Controle de Estoque</h3>
+				<h4 class="portfolio"></h4>
+			</li>
+			<li class="portfolio">
+				<img class="portfolio" src="./media/website.svg">
+				<h3 class="portfolio">Websites</h3>
+				<h4 class="portfolio"></h4>
+			</li>
+			<li class="portfolio">
+				<img class="portfolio" src="./media/app.svg">
+				<h3 class="portfolio">Aplicativos mobile</h3>
+				<h4 class="portfolio"></h4>
+			</li>
+			<li class="portfolio">
+				<img class="portfolio" src="./media/excel.svg">
+				<h3 class="portfolio">Cursos de Excel</h3>
+				<h4 class="portfolio"></h4>
+			</li>
+		</ul>		
+	</div>
+
+	<!--Sobre nós-->
+
+	<div class="sobre sub-container">
+		<h2 class="sobre title">Sobre nós</h2>
+		<p class="sobre">A Physis é uma empresa júnior do curso de Engenharia Física da UFSCar - São Carlos.
+		</p>
+		<p class="sobre">
+			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lectus congue, fringilla libero vel, pharetra purus. Nam facilisis dui vitae lectus ullamcorper commodo. Suspendisse lobortis ultricies tortor, et ullamcorper diam finibus sit amet. Curabitur euismod augue a ligula pulvinar scelerisque eu at eros. Quisque nec purus aliquam, suscipit sapien in, dapibus lorem. Nullam tincidunt, metus sed vulputate auctor, ex lacus rutrum tortor, et facilisis quam nisi sit amet lorem. Fusce facilisis est vel neque tempus, et volutpat arcu varius. Maecenas sed ligula convallis, blandit lorem nec, convallis purus. Cras non facilisis orci, vel ornare erat. Aenean ornare est at dapibus facilisis. Maecenas dictum eros quis metus scelerisque tincidunt. Aliquam mattis massa eu diam cursus maximus id et leo. Nullam vel ex erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+		</p>
+		<p class="sobre">
+			Mauris faucibus erat blandit, finibus nibh non, ultrices est. Sed sed vestibulum erat, eu facilisis quam. Cras venenatis eget ligula id posuere. Curabitur sollicitudin fringilla risus, commodo eleifend risus elementum id. Morbi quis euismod massa. Praesent diam est, molestie eget massa ut, dictum convallis mauris. Fusce placerat maximus mauris. Aenean ac pretium augue. Ut nec eros gravida, tincidunt dui nec, ullamcorper dolor.
+		</p>
+
+		<!--Galeria-->
+		<div class="galeria container">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+			<img class="galeria" src="">
+		</div>
+	</div>
+
+
+	<!--Contato-->
+	<div class="contato container">
+		<h2 class="contato title">Contato</h2>
+		<div class="contato-info">
+			<div class="email">
+
 			</div>
-			<div class="portfolio-item">
-				<img class="portfolio-item" src=""><p class="portfolio-item">Front-End para Web</p>
+			<div class="telefone">
+
 			</div>
-			<div class="portfolio-item">
-				<img class="portfolio-item" src=""><p class="portfolio-item">Aplicativos mobile</p>
+			<div class="mapa">
+
 			</div>
-		</div>		
+		</div>
+		<form class="contato">
+
+		</form>
 	</div>
 
 
