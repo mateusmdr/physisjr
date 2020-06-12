@@ -1,12 +1,7 @@
-html,body{
-	height: 100%;
-	width: 100vw;
-}
-
-h1,h2,a{ /*Padronizando as fontes*/
+a{ /*Padronizando as fontes*/
 	color: #750000;
-	font-weight: bold;
-	font-family: sans-serif;	
+	font-weight: normal;
+	font-family: 'Raleway',sans-serif;	
 	text-decoration: none;
 }
 
@@ -15,10 +10,10 @@ h1,h2,a{ /*Padronizando as fontes*/
 /*-------------------*/
 
 header{
-	display: block;
 	position: fixed;
+	display: block;
 	background-color: white;
-	width: 100vw; /*Responsividade horizontal do menu*/
+	width: 100%; /*Responsividade horizontal do menu*/
 	height: 8vh; /*Responsividade vertical do menu*/
 }
 
@@ -28,6 +23,8 @@ header > nav {
 }
 
 #logo,header>a {
+	box-sizing: border-box;
+	padding-left: 20px;
 	position: relative;	
 	float: left; /*Coloca a imagem à esquerda*/
 	height: inherit; /*Define a altura como sendo igual à tag header*/
@@ -45,6 +42,11 @@ a.menuLink:hover {
 	color: white;
 }
 
+a.menuLink:last-of-type{ /*Botão de contato*/
+	background-color: #750000;
+	color: white;
+}
+
 @media only screen and (max-width: 800px){
 	nav#menu {
 		display: none;
@@ -58,12 +60,18 @@ a.menuLink:hover {
 /*----------------------*/
 
 div.apresentacao {
-	padding: calc(8% + 30px) 0;
-	background-image: url("./media/background.jpg");
+	background-image: url("./media/background.png");
 	background-repeat: no-repeat;
 	background-size: cover;
 	background-attachment: fixed;
 	background-position: center;
+}
+
+div#opacidade {
+	padding: calc(8% + 30px) 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(50,50,50,.8);
 }
 
 hgroup.apresentacao {
@@ -76,15 +84,21 @@ hgroup.apresentacao {
 
 h1.apresentacao {
 	font-size: 4.5em;
-	padding-bottom: 50px;
+	padding-bottom: 80px;
+	font-weight: bold;
+	font-family: 'Raleway',sans-serif;
+	color: white;
 }
 
 h2.apresentacao {
 	font-size: 3em;
+	font-weight: bold;
+	font-family: 'Raleway',sans-serif;
+	color: white;
 }
 
 div.contato{
-	margin: 100px 0;
+	margin-top: 150px;
 	text-align: center;
 }
 
@@ -99,22 +113,6 @@ a.contato {
 	text-decoration: none;
 }
 
-div.social {
-	text-align: center;
-}
-
-img.social{
-	display: inline-block;
-	width: 50px;
-	height: 50px;
-	margin: 0 20px;
-}
-
-img.social:first-child,img.social:last-child{
-	background-color: white;
-	border-radius: 8px;
-}
-
 /*Fim da apresentação*/
 /*-------------------*/
 
@@ -122,7 +120,6 @@ img.social:first-child,img.social:last-child{
 /*-------------------*/
 
 div.portfolio {
-	width: 100vw;
 	text-align: center;
 }
 
@@ -167,3 +164,31 @@ p.portfolio-item {
 
 /*Fim do portfólio*/
 /*----------------*/
+
+
+/*Começo do rodapé*/
+/*----------------*/
+
+div.rodape{
+	background-color: rgb(100,100,100);
+	margin-top: 300px;
+}
+
+div.social {
+	text-align: left;
+}
+
+img.social{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+}
+
+img.social:first-child,img.social:last-child{
+	background-color: white;
+	border-radius: 8px;
+}
+
+/*Fim do rodapé*/
+/*-------------*/
