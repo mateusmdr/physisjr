@@ -32,4 +32,12 @@
 	h2.portfolio{
 		font-size: 1.2em;
 	}
+
+	h4.portfolio{
+		display: none;
+	}
+
+	h4.portfolio:hover{
+		display: static;
+	}
 }
