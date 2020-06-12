@@ -1,7 +1,12 @@
+html, body{
+	width: 100%;
+	height: 100%;
+}
+
 a{ /*Padronizando as fontes*/
 	color: #750000;
 	font-weight: normal;
-	font-family: 'Raleway',sans-serif;	
+	font-family: 'Open Sans',sans-serif;	
 	text-decoration: none;
 }
 
@@ -14,6 +19,7 @@ a{ /*Padronizando as fontes*/
 }
 
 .container{
+	width: 100%;
 	margin: 0 auto; /*Centraliza o hgroup na viewport*/
 	text-align: center; /*Centraliza os textos dentro do hgroup*/
 }
@@ -23,6 +29,10 @@ a{ /*Padronizando as fontes*/
 	max-width: 800px; /*Responsividade dos textos*/
 	margin: 0px auto; /*Centraliza o hgroup na viewport*/
 	text-align: center; /*Centraliza os textos dentro do hgroup*/
+}
+
+div.row{
+	display: inline-block;
 }
 
 
@@ -136,16 +146,26 @@ h2.portfolio {
 }
 
 ul.portfolio{
-	margin-top: 50px;
+	margin-top: 50px;	
+}
+
+ul.portfolio > div.row {
+	display: inline-block;
+	box-sizing: content-box;
+	margin: 20px;
+	vertical-align: center;
 }
 
 li.portfolio{
 	display: inline-block;
-	margin: 10px 20px 30px 20px;
-	box-sizing: content-box;
-	padding: 20px;
+	margin: 20px;
+	width: 300px;
+	height: 200px;
 	border: solid 1px rgba(200,200,200,.8);
-	border-radius: 20px
+	border-radius: 20px;
+	padding: 20px;
+	padding-bottom: 30px;
+	text-align: center;
 }
 
 img.portfolio{
@@ -155,15 +175,17 @@ img.portfolio{
 }
 
 h3.portfolio {
-	display: block;
-	width: 250px;
+	width: 300px;
 	padding-top: 20px;
 	font-size: 1.5em;
+	font-weight: bold;
+	padding-bottom: 10px;
 	font-family: 'Raleway',sans-serif;
 }
 
 h4.portfolio {
-	
+	font-size: 1.2em;
+	font-family: 'Open Sans',sans-serif;
 }
 
 /*Fim do portfólio*/
@@ -180,15 +202,24 @@ p.sobre{
 	margin: 15px 0;
 }
 
-img.galeria {
-	width: 150px;
-	height: 150px;
-	margin: 25px;
+
+
+div.galeria {
+	margin-top: 50px;
 }
 
-img.galeria:hover {
-	width: 200px;
-	height: 200px;
+img.galeria {
+	width: 20vw;
+	height: 20vw;
+	margin: 10px;
+	transition: .5s;
+}
+
+img.galeria:hover{
+	width: 30vw;
+	height: 30vw;
+	border: solid 1px rgb(200,200,200);
+	padding: 3px;
 	transition: .5s;
 }
 
@@ -199,11 +230,9 @@ img.galeria:hover {
 /*Começo do contato*/
 /*-----------------*/
 
-	div.mapa {
-		width: 100%;
-		height: 150px;
-		background-color: red;
-	}
+div.mapa {
+	margin-bottom: -4px;
+}
 
 /*Fim do contato*/
 /*--------------*/
@@ -215,11 +244,11 @@ img.galeria:hover {
 div.rodape{
 	width: 100%;
 	background-color: rgb(100,100,100);
-	padding-top: 50px;
 }
 
 div.social {
 	text-align: left;
+	padding: 10px 0;
 }
 
 img.social{
@@ -229,10 +258,10 @@ img.social{
 	margin: 0 10px;
 }
 
-img.social:first-child,img.social:last-child{
+/*img.social:first-child,img.social:last-child{
 	background-color: white;
 	border-radius: 10px;
-}
+}*/
 
 /*Fim do rodapé*/
 /*-------------*/

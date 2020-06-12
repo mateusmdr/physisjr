@@ -10,6 +10,8 @@
 	<meta name="viewport" content="width=device-width">
 
 	<link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;700&display=swap" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,400;1,600&display=swap" rel="stylesheet">
+
 </head>
 <body>
 
@@ -28,12 +30,12 @@
 	</header>
 
 	<!--Apresentação-->
-	<div class="apresentacao">
+	<div class="apresentacao container">
 		<div id="opacidade">
-			<hgroup class="apresentacao">
+			<hgroup class="apresentacao sub-container">
 				<h1 class="apresentacao">Physis Jr</h1>
 				<h2 class="apresentacao">Engenharia e Tecnologia</h2>
-			</hgroup>		
+			</hgroup>
 
 			<div class="contato-button">
 				<a class="contato-button" href="">Entre em contato</a>
@@ -49,26 +51,31 @@
 		</hgroup>
 
 		<ul class="portfolio">
-			<li class="portfolio">
-				<img class="portfolio" src="./media/estoque.svg">
-				<h3 class="portfolio">Controle de Estoque</h3>
-				<h4 class="portfolio"></h4>
-			</li>
-			<li class="portfolio">
-				<img class="portfolio" src="./media/website.svg">
-				<h3 class="portfolio">Websites</h3>
-				<h4 class="portfolio"></h4>
-			</li>
-			<li class="portfolio">
-				<img class="portfolio" src="./media/app.svg">
-				<h3 class="portfolio">Aplicativos mobile</h3>
-				<h4 class="portfolio"></h4>
-			</li>
-			<li class="portfolio">
-				<img class="portfolio" src="./media/excel.svg">
-				<h3 class="portfolio">Cursos de Excel</h3>
-				<h4 class="portfolio"></h4>
-			</li>
+			<div class="row">
+				<li class="portfolio">
+					<img class="portfolio" src="./media/estoque.svg">
+					<h3 class="portfolio">Controle de Estoque</h3>
+					<h4 class="portfolio">Melhore a gestão de seus produtos</h4>
+				</li>
+				<li class="portfolio">
+					<img class="portfolio" src="./media/website.svg">
+					<h3 class="portfolio">Websites</h3>
+					<h4 class="portfolio">Conecte-se ao mundo e atinja um maior público</h4>
+				</li>
+			</div>
+
+			<div class="row">
+				<li class="portfolio">
+					<img class="portfolio" src="./media/app.svg">
+					<h3 class="portfolio">Aplicativos mobile</h3>
+					<h4 class="portfolio">Facilite o acesso aos seus serviços</h4>
+				</li>
+				<li class="portfolio">
+					<img class="portfolio" src="./media/excel.svg">
+					<h3 class="portfolio">Cursos de Excel</h3>
+					<h4 class="portfolio">Aprenda uma das ferramentas mais requisitadas do mercado</h4>
+				</li>
+			</div>
 		</ul>		
 	</div>
 
@@ -87,15 +94,14 @@
 
 		<!--Galeria-->
 		<div class="galeria container">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
-			<img class="galeria" src="">
+			<div class="row">
+				<img class="galeria" src="./media/galeria1.jpg">
+				<img class="galeria" src="./media/galeria1.jpg">
+			</div>
+			<div class="row">
+				<img class="galeria" src="./media/galeria1.jpg">
+				<img class="galeria" src="./media/galeria1.jpg">
+			</div>
 		</div>
 	</div>
 
@@ -111,12 +117,12 @@
 
 			</div>
 			<div class="mapa">
-
+				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
 			</div>
 		</div>
-		<form class="contato">
-
-		</form>
+		<div class="contato">
+			<img class="contato" src="../media/logo.png">
+		</div>
 	</div>
 
 
