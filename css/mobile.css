@@ -33,7 +33,16 @@
 		font-size: 1.2em;
 	}
 
+<<<<<<< HEAD
 	ul.portfolio > div.row:first-of-type > li:last-child {
 		margin-bottom: 0
+=======
+	h4.portfolio{
+		display: none;
+	}
+
+	h4.portfolio:hover{
+		display: static;
+>>>>>>> 79ee2b7af273b2f31e863eda7d64d494d23e1215
 	}
 }
