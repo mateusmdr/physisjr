@@ -8,11 +8,19 @@
 		color: #750000;
 	}
 
+	img#logo{
+		padding: 0;
+	}
+	nav#menu{
+		text-align: center;
+	}
+
 	a.menuLink {
 		display: none;
 	}
 	a.menuLink:last-child{
 		display: inline-block;
+		float:right;
 		padding: 0 10px;
 	}
 
@@ -33,16 +41,23 @@
 		font-size: 1.2em;
 	}
 
-<<<<<<< HEAD
 	ul.portfolio > div.row:first-of-type > li:last-child {
 		margin-bottom: 0
-=======
+	}
 	h4.portfolio{
 		display: none;
 	}
 
+	li.portfolio:hover h4.portfolio{
+		display:static;
+	}
+
 	h4.portfolio:hover{
 		display: static;
->>>>>>> 79ee2b7af273b2f31e863eda7d64d494d23e1215
 	}
+
+	img.galeria {
+		width: 40vh;
+	}
+
 }

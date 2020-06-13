@@ -14,18 +14,18 @@
 
 </head>
 <body>
-
+	<div id="home"></div>
 	<!--Cabeçalho-->
 	<header>
-		<a href="./">
+		<a href="#home">
 			<img id="logo" src="./media/logo.png">
 		</a>
 		<nav id="menu">
-			<a class="menuLink" href="./">Home</a>
-			<a class="menuLink" href="">Serviços</a>
-			<a class="menuLink" href="">Sobre</a>
+			<a class="menuLink" href="#home">Home</a>
+			<a class="menuLink" href="#servicos">Serviços</a>
+			<a class="menuLink" href="#quemsomos">Sobre</a>
 			<a class="menuLink" href="">Blog</a>
-			<a class="menuLink" href="">Contato</a>
+			<a class="menuLink" href="#contato">Contato</a>
 		</nav>
 	</header>
 
@@ -38,16 +38,19 @@
 			</hgroup>
 
 			<div class="contato-button">
-				<a class="contato-button" href="">Entre em contato</a>
+				<a class="contato-button" href="#contato">Entre em contato</a>
 			</div>
 		</div>
 	</div>
 
 	<!--Portfólio-->
+
+	<div id="servicos"></div>
+
 	<div class="portfolio container">
 		<hgroup class="portfolio sub-container">
 			<h1 class="portfolio title">Serviços</h1>
-			<a class="portfolio" href=""><h2 class="portfolio">Realize seu diagnóstico gratuitamente!</h2></a>
+			<a class="portfolio" href="#contato"><h2 class="portfolio">Realize seu diagnóstico gratuitamente!</h2></a>
 		</hgroup>
 
 		<ul class="portfolio">
@@ -81,15 +84,22 @@
 
 	<!--Sobre nós-->
 
+	<div id="quemsomos"></div>
+
 	<div class="sobre sub-container">
-		<h2 class="sobre title">Sobre nós</h2>
-		<p class="sobre">A Physis é uma empresa júnior do curso de Engenharia Física da UFSCar - São Carlos.
+		<h2 class="sobre title">Quem somos</h2>
+		<p class="sobre">A Physis Jr. é a empresa júnior do curso de Engenharia Física da UFSCar - São Carlos.
 		</p>
 		<p class="sobre">
-			Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam vitae lectus congue, fringilla libero vel, pharetra purus. Nam facilisis dui vitae lectus ullamcorper commodo. Suspendisse lobortis ultricies tortor, et ullamcorper diam finibus sit amet. Curabitur euismod augue a ligula pulvinar scelerisque eu at eros. Quisque nec purus aliquam, suscipit sapien in, dapibus lorem. Nullam tincidunt, metus sed vulputate auctor, ex lacus rutrum tortor, et facilisis quam nisi sit amet lorem. Fusce facilisis est vel neque tempus, et volutpat arcu varius. Maecenas sed ligula convallis, blandit lorem nec, convallis purus. Cras non facilisis orci, vel ornare erat. Aenean ornare est at dapibus facilisis. Maecenas dictum eros quis metus scelerisque tincidunt. Aliquam mattis massa eu diam cursus maximus id et leo. Nullam vel ex erat. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+			Nós fornecemos soluções inovadoras e eficazes a baixo custo. Para isso, empregamos a multidisciplinaridade dos conhecimentos adquiridos durante a graduação, juntamente com a bagagem trazida pelos membros dos diversos cursos da UFSCar para a realização de projetos.
 		</p>
+		<h3 class="sobre">Missão</h3>
 		<p class="sobre">
-			Mauris faucibus erat blandit, finibus nibh non, ultrices est. Sed sed vestibulum erat, eu facilisis quam. Cras venenatis eget ligula id posuere. Curabitur sollicitudin fringilla risus, commodo eleifend risus elementum id. Morbi quis euismod massa. Praesent diam est, molestie eget massa ut, dictum convallis mauris. Fusce placerat maximus mauris. Aenean ac pretium augue. Ut nec eros gravida, tincidunt dui nec, ullamcorper dolor.
+			Formar e transformar, do Estudante ao Profissional, do Teórico ao Prático, Impactando a Sociedade
+		</p>
+		<h3 class="sobre">Visão</h3>
+		<p class="sobre">
+			Ser uma Empresa Júnior de Alto Desempenho
 		</p>
 
 		<!--Galeria-->
@@ -107,21 +117,28 @@
 
 
 	<!--Contato-->
+	<div id="contato"></div>
+
 	<div class="contato container">
 		<h2 class="contato title">Contato</h2>
 		<div class="contato-info">
-			<div class="email">
-
+			<div class="contato email">
+				<a href="">
+				<img class="contato" src="./media/gmail.svg">
+				<span class="contato">contato@physisjr.com</span>
+				</a>
 			</div>
-			<div class="telefone">
-
-			</div>
-			<div class="mapa">
-				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="false" aria-hidden="false" tabindex="0"></iframe>
-			</div>
+			<div class="contato telefone">
+				<a href="">
+					<img class="contato" src="./media/phone.svg">
+					<span class="contato">
+					(16) 99999-9999
+					</span>
+				</a>
+			</div>			
 		</div>
-		<div class="contato">
-			<img class="contato" src="../media/logo.png">
+		<div class="mapa">
+			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
 		</div>
 	</div>
 
@@ -129,10 +146,11 @@
 	<!--Rodapé-->
 	<div class="rodape">
 		<div class="social">
-			<a href=""><img class="social" src="./media/facebook.svg"></a>
-			<a href=""><img class="social" src="./media/instagram.svg"></a>
-			<a href=""><img class="social" src="./media/linkedin.svg"></a>
+			<a href="https://www.facebook.com/physisjr"><img class="social" src="./media/facebook.svg"></a>
+			<a href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" src="./media/instagram.svg"></a>
+			<a href="https://www.linkedin.com/company/physisjr/"><img class="social" src="./media/linkedin.svg"></a>
 		</div>
+		<span class="rodape"><a href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
 	</div>
 </body>
 </html>
