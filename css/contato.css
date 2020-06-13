@@ -1,6 +1,14 @@
 /*Começo do contato*/
 /*-----------------*/
 
+form#pipefy {
+	display: inline-block;
+	border: 2px solid rgb(220,220,220);
+}
+
+div.email, div.telefone {
+	display: inline-block;
+}
 
 div.contato-info {
 	margin-bottom: 50px;
@@ -14,6 +22,8 @@ img.contato {
 
 div.mapa {
 	margin-bottom: -4px;
+	display: block;
+	position: relative;
 }
 
 /*Fim do contato*/

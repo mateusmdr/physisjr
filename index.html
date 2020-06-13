@@ -16,18 +16,40 @@
 
 </head>
 <body>
+
 	<div id="home"></div>
 	<!--Cabeçalho-->
+
+	<script>
+		function switchMenu(){
+			x = document.getElementById("menuMobile").style.opacity;
+
+			if (x=="1"){
+				document.getElementById("menuMobile").style.opacity = "0";
+			} else{
+				document.getElementById("menuMobile").style.opacity = "1";
+			}
+		}
+	</script>
+
 	<header>
 		<a href="#home">
-			<img id="logo" src="./media/logo.png">
+			<img class="menu" src="./media/logo.png">
 		</a>
-		<nav id="menu">
-			<a class="menuLink" href="#home">Home</a>
-			<a class="menuLink" href="./servicos.html">Serviços</a>
-			<a class="menuLink" href="./sobre.html">Sobre</a>
-			<a class="menuLink" href="">Blog</a>
-			<a class="menuLink" href="./contato.html">Contato</a>
+		<nav class="menu">
+			<a class="menu" href="./index.html#home">Home</a>
+			<a class="menu" href="./sobre.html">Sobre</a>			
+			<a class="menu" href="./contato.html">Contato</a>
+			<a class="menu" href="">Blog</a>
+			<a class="menu" href="./servicos.html">Serviços</a>
+		</nav>
+		<img onclick="switchMenu()" class="menuMobile" src="./media/menu.svg">
+		<nav id="menuMobile" class="menuMobile">
+			<a class="menuMobile" href="#home">Home</a>
+			<a class="menuMobile" href="./sobre.html">Sobre</a>			
+			<a class="menuMobile" href="./contato.html">Contato</a>
+			<a class="menuMobile" href="">Blog</a>
+			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>
 	</header>
 
@@ -58,68 +80,56 @@
 
 		<ul class="portfolio">
 			<div class="portfolio-row">
-				<a href="./servicos.html#estoque">
-					<li class="portfolio">
-						<img class="portfolio" src="./media/estoque.svg">
-						<h1 class="portfolio">Controle de Estoque</h1>
-						<h2 class="portfolio">Melhore a gestão de seus produtos</h2>
-					</li>
+				<a class="portfolio" href="./servicos.html#estoque">					
+					<img class="portfolio" src="./media/estoque.svg">
+					<h1 class="portfolio">Controle de Estoque</h1>
+					<h2 class="portfolio">Melhore a gestão de seus produtos</h2>					
 				</a>
-				<a href="./servicos.html#website">
-					<li class="portfolio">
-						<img class="portfolio" src="./media/website.svg">
-						<h1 class="portfolio">Websites</h1>
-						<h2 class="portfolio">Conecte-se ao mundo e atinja um maior público</h2>
-					</li>
+				<a class="portfolio" href="./servicos.html#website">					
+					<img class="portfolio" src="./media/website.svg">
+					<h1 class="portfolio">Websites</h1>
+					<h2 class="portfolio">Conecte-se ao mundo e atinja um maior público</h2>
 				</a>
-				<a href="./servicos.html#eletronica">
-					<li class="portfolio">
+				<a class="portfolio" href="./servicos.html#eletronica">
 						<img class="portfolio" src="./media/eletronica.svg">
 						<h1 class="portfolio">Soluções em eletrônica</h1>
 						<h2 class="portfolio">Automatize seus processos com mais eficiência</h2>
-					</li>
 				</a>
 			</div>
 
 			<div class="portfolio-row">
-				<a href="./servicos.html#mobile">
-					<li class="portfolio">
-						<img class="portfolio" src="./media/app.svg">
-						<h1 class="portfolio">Aplicativos mobile</h1>
-						<h2 class="portfolio">Facilite o acesso aos seus serviços</h2>
-					</li>
+				<a class="portfolio" href="./servicos.html#mobile">
+					<img class="portfolio" src="./media/app.svg">
+					<h1 class="portfolio">Aplicativos mobile</h1>
+					<h2 class="portfolio">Facilite o acesso aos seus serviços</h2>
 				</a>
-				<a href="./servicos.html#excel">
-					<li class="portfolio">
-						<img class="portfolio" src="./media/excel.svg">
-						<h1 class="portfolio">Cursos de Excel</h1>
-						<h2 class="portfolio">Aprenda a ferramenta mais requisitada do mercado</h2>
-					</li>
+				<a class="portfolio" href="./servicos.html#excel">
+					<img class="portfolio" src="./media/excel.svg">
+					<h1 class="portfolio">Cursos de Excel</h1>
+					<h2 class="portfolio">Aprenda a ferramenta mais requisitada do mercado</h2>
 				</a>
-				<a href="./servicos.html#dados">
-					<li class="portfolio">
-						<img class="portfolio" src="./media/dados.svg">
-						<h1 class="portfolio">Análise de dados</h1>
-						<h2 class="portfolio">Tome decisões baseadas em estatísticas internas</h2>
-					</li>
+				<a class="portfolio" href="./servicos.html#dados">
+					<img class="portfolio" src="./media/dados.svg">
+					<h1 class="portfolio">Análise de dados</h1>
+					<h2 class="portfolio">Tome decisões baseadas em estatísticas internas</h2>
 				</a>
 			</div>
 		</ul>
 
-		<a class="portfolio" href="./contato.html">Realize seu diagnóstico gratuitamente!</a>
+		<a class="portfolio-contato" href="./contato.html">Realize seu diagnóstico gratuitamente!</a>
 
 	</div>
 
 
 
 	<!--Rodapé-->
-	<div class="rodape">
+	<footer class="rodape">
 		<span class="rodape"><a href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
 		<div class="social">
 			<a href="https://www.facebook.com/physisjr"><img class="social" src="./media/facebook.svg"></a>
 			<a href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" src="./media/instagram.svg"></a>
 			<a href="https://www.linkedin.com/company/physisjr/"><img class="social" src="./media/linkedin.svg"></a>
 		</div>		
-	</div>
+	</footer>
 </body>
 </html>

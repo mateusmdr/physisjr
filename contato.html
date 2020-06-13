@@ -18,17 +18,39 @@
 
 <body>
 
+	<div id="home"></div>
 	<!--Cabeçalho-->
+
+	<script>
+		function switchMenu(){
+			x = document.getElementById("menuMobile").style.opacity;
+
+			if (x=="1"){
+				document.getElementById("menuMobile").style.opacity = "0";
+			} else{
+				document.getElementById("menuMobile").style.opacity = "1";
+			}
+		}
+	</script>
+
 	<header>
-		<a href="./index.html#home">
-			<img id="logo" src="./media/logo.png">
+		<a href="#home">
+			<img class="menu" src="./media/logo.png">
 		</a>
-		<nav id="menu">
-			<a class="menuLink" href="./index.html#home">Home</a>
-			<a class="menuLink" href="./servicos.html">Serviços</a>
-			<a class="menuLink" href="./sobre.html">Sobre</a>
-			<a class="menuLink" href="">Blog</a>
-			<a class="menuLink" href="./contato.html">Contato</a>
+		<nav class="menu">
+			<a class="menu" href="./index.html#home">Home</a>
+			<a class="menu" href="./sobre.html">Sobre</a>			
+			<a class="menu" href="./contato.html">Contato</a>
+			<a class="menu" href="">Blog</a>
+			<a class="menu" href="./servicos.html">Serviços</a>
+		</nav>
+		<img onclick="switchMenu()" class="menuMobile" src="./media/menu.svg">
+		<nav id="menuMobile" class="menuMobile">
+			<a class="menuMobile" href="#home">Home</a>
+			<a class="menuMobile" href="./sobre.html">Sobre</a>			
+			<a class="menuMobile" href="./contato.html">Contato</a>
+			<a class="menuMobile" href="">Blog</a>
+			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>
 	</header>
 
@@ -38,6 +60,9 @@
 	<div class="contato container">
 		<h2 class="contato title">Contato</h2>
 		<div class="contato-info">
+			<form id="pipefy">
+				<iframe width="560" height="580" src="https://app.pipefy.com/public_form/301330938?embedded=true" frameborder="0"></iframe>
+			</form>
 			<div class="contato email">
 				<a href="">
 				<img class="contato" src="./media/gmail.svg">
@@ -51,11 +76,11 @@
 					(16) 99999-9999
 					</span>
 				</a>
-			</div>			
-		</div>
-		<div class="mapa">
-			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
-		</div>
+			</div>
+			<div class="mapa">
+				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="300" frameborder="0" style="border:0;" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
+			</div>		
+		</div>		
 	</div>
 
 </body>
