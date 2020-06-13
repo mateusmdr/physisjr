@@ -28,6 +28,9 @@
 		font-size: 3em;
 	}
 	h2.apresentacao{
+		font-size: 1.2em;
+	}
+	h3.apresentacao {
 		font-size: 1.5em;
 	}
 	div.contato-button{
@@ -44,15 +47,21 @@
 	ul.portfolio > div.row:first-of-type > li:last-child {
 		margin-bottom: 0
 	}
-	h4.portfolio{
-		display: none;
+
+	li.portfolio {
+		display: inline-block;
+		margin: 10px;
 	}
 
-	li.portfolio:hover h4.portfolio{
-		display:static;
+	div.portfolio-row {
+		display: inline;
 	}
 
-	h4.portfolio:hover{
+	li.portfolio > h2.portfolio{
+		display:none;
+	}
+
+	li.portfolio:hover h2.portfolio{
 		display: static;
 	}
 
