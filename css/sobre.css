@@ -1,0 +1,56 @@
+/*Começo do sobre nós*/
+/*-------------------*/
+
+div.sobre{
+	padding: 50px 0;
+}
+
+p.sobre{
+	font-size: 1.3em;
+	font-family: 'Open Sans',sans-serif;
+	color: black;
+	text-align: justify;
+	margin: 15px 0;
+}
+
+p.sobre:nth-of-type(3),p.sobre:nth-of-type(4){
+	text-align: center;
+}
+
+h3.sobre {
+	font-size: 2.5em;
+	font-weight: bold;
+	font-family: 'Open Sans',sans-serif;
+	color: #750000;
+	margin-top: 50px;
+}
+
+
+div.galeria {
+	margin-top: 50px;
+}
+
+img.galeria {
+	width: 20vw;
+	margin: 10px;
+	transition: .5s;
+	object-fit: contain;
+}
+
+@media only screen and (min-width: 800px){ /*configurando zoom das imagens apenas para desktop*/
+	img.galeria:hover{
+		width: 30vw;
+		border: solid 2px rgb(200,200,200);
+		padding: 3px;
+		transition: .5s;
+	}
+}
+
+@media only screen and (max-width: 800px){
+	img.galeria {
+		width: 40vh;
+	}
+}
+
+/*Fim do sobre nós*/
+/*----------------*/

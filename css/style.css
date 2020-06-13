@@ -1,0 +1,146 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	scroll-behavior: smooth;
+}
+
+a{
+	text-decoration: none;
+	color: black;
+}
+
+.title {
+	font-size: 4em;
+	padding: 50px 0;	
+	font-family: 'Raleway',sans-serif;
+	font-weight: bold;
+	color: #750000;
+}
+
+.subtitle {
+	font-size: 2em;
+	padding: 10px 0;	
+	font-family: 'Raleway',sans-serif;
+	font-weight: bold;
+	color: #750000;
+}
+
+.container{
+	width: 100%;
+	margin: 0 auto; /*Centraliza o container na viewport*/
+	text-align: center; /*Centraliza os textos dentro do container*/
+}
+
+.sub-container {
+	width: 80%; /*Responsividade dos textos*/
+	max-width: 800px; /*Responsividade dos textos*/
+	margin: 0px auto; /*Centraliza o sub-container na viewport*/
+	text-align: center; /*Centraliza os textos dentro do sub-container*/
+}
+
+
+/*Começo do cabeçalho*/
+/*-------------------*/
+
+header{
+	position: fixed;
+	display: block;
+	background-color: white;
+	width: 100%; /*Responsividade horizontal do menu*/
+	padding: 5px 0; /*Dá um espaço entre a header e as fronteiras da página*/
+}
+
+header > nav {
+	text-align: right; /*Coloca o texto da tag nav à direita*/
+	padding-right: 20px;
+}
+
+#logo,header>a {
+	box-sizing: border-box;
+	padding-left: 20px;
+	position: relative;	
+	float: left; /*Coloca a imagem à esquerda*/
+	height: 8vh; /*Responsividade vertical do menu*/
+}
+
+a.menuLink{
+	color: #750000;
+	font-family: 'Open Sans';
+	font-size: 1.2em;
+	padding: 5px 20px; /*Espaça os links*/
+	line-height: 8vh; /*Centraliza os links verticalmente de maneira responsiva*/
+	border-radius: 5px; /*Arredonda a borda*/
+}
+
+a.menuLink:hover {
+	background-color: #750000;
+	color: white;
+}
+
+a.menuLink:last-of-type{ /*Botão de contato*/
+	background-color: #750000;
+	color: white;
+}
+
+@media only screen and (max-width: 800px){
+	.title {
+		font-size: 4em;
+		padding: 35px 0;	
+		font-family: 'Raleway',sans-serif;
+		font-weight: bold;
+		color: #750000;
+	}
+
+	img#logo{
+		padding: 0;
+	}
+	nav#menu{
+		text-align: center;
+	}
+
+	a.menuLink {
+		display: none;
+	}
+	a.menuLink:last-child{
+		display: inline-block;
+		float:right;
+		padding: 0 10px;
+	}
+}
+
+/*Fim do cabeçalho*/
+/*----------------*/
+
+
+/*Começo do rodapé*/
+/*----------------*/
+
+div.rodape{
+	width: 100%;
+	background-color: rgb(100,100,100);	
+	text-align: right;
+}
+
+div.social {
+	display: inline-block;
+	padding: 10px 0;
+}
+
+img.social{
+	display: inline-block;
+	width: 30px;
+	height: 30px;
+	margin: 0 10px;
+}
+
+span.rodape{
+	display: inline-block;
+	color: white;
+	font-family: tahoma,sans-serif;
+	font-size: 10px;
+	padding-left: 10px;
+	margin-bottom: 10px;
+}
+
+/*Fim do rodapé*/
+/*-------------*/
