@@ -1,6 +1,10 @@
 /*Começo do contato*/
 /*-----------------*/
 
+h2.contato {
+	padding: calc(8vh + 20px) 0;
+}
+
 form#pipefy {
 	display: inline-block;
 	border: 2px solid rgb(220,220,220);

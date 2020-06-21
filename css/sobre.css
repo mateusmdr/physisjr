@@ -27,28 +27,43 @@ h3.sobre {
 
 
 div.galeria {
-	margin-top: 50px;
+	margin: 50px auto 0 auto;
+	width: calc(40px + 60vw);
 }
 
 img.galeria {
-	width: 20vw;
+	width: 30vw;
+	height: calc(3 / 4 * 30vw);
+	object-fit: cover;
 	margin: 10px;
-	transition: .5s;
-	object-fit: contain;
+	float: left;
 }
 
-@media only screen and (min-width: 800px){ /*configurando zoom das imagens apenas para desktop*/
+/*configurando zoom das imagens apenas para desktop*/
+
+/*@media only screen and (min-width: 800px){ 
 	img.galeria:hover{
-		width: 30vw;
-		border: solid 2px rgb(200,200,200);
-		padding: 3px;
+		width: 40vw;
+		height: calc(3 / 4 * 40vw);
 		transition: .5s;
+		margin: calc(10px - (3 / 4 * 5vw)) calc(2px - 5vw);
+		z-index: 2;
+		position: relative;
 	}
-}
+
+	div.galeria:hover {
+		width: calc(40px + 80vw);
+	}
+*/
 
 @media only screen and (max-width: 800px){
 	img.galeria {
 		width: 40vh;
+		height: calc(3 / 4 * 40vh);
+		display: block;
+	}
+	div.galeria {
+		width: 100%;
 	}
 }
 

@@ -1,0 +1,48 @@
+.servicos {
+	padding-top: calc(8vh + 75px);
+}
+
+.servicos-box {
+	height: 250px;
+	background-color: red;
+	border-bottom: 2px solid black;
+}
+
+.servicos-box:nth-of-type(2n) > .servicos-icon {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	float: left;
+	top: 25px;
+	margin-left: 50px;
+	background-color: blue;
+}
+
+.servicos-box:nth-of-type(2n + 1) > .servicos-icon {
+	width: 200px;
+	height: 200px;
+	position: relative;
+	float: right;
+	top: 25px;
+	margin-right: 50px;
+	background-color: blue;
+}
+
+.servicos-box:nth-of-type(2n) > .servicos-about {
+	float: left;
+	padding-left: 20px;
+	width: 500px;
+	text-align: justify;
+	position: relative;
+	top: 25px;
+}
+
+.servicos-box:nth-of-type(2n + 1) > .servicos-about {
+	float: right;
+	direction: rtl;
+	padding-right: 20px;
+	width: 500px;
+	text-align: justify;
+	position: relative;
+	top: 25px;
+}
