@@ -10,23 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/servicos.css">
+
+	<!--Scripts-->
+	<script src="./js/navbar.js"></script>
 </head>
 
 <body>
 
 	<!--Cabeçalho-->
-
-	<script>
-		function switchMenu(){
-			x = document.getElementById("menuMobile").style.opacity;
-
-			if (x=="1"){
-				document.getElementById("menuMobile").style.opacity = "0";
-			} else{
-				document.getElementById("menuMobile").style.opacity = "1";
-			}
-		}
-	</script>
 
 	<header>
 		<a href="./index.html">
@@ -49,51 +40,60 @@
 		</nav>
 	</header>
 
-</body>
+	<!--Portfolio-->
 
-	<div class="container servicos">
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
+	<div class="portfolio container">
+		<hgroup class="portfolio sub-container">
+			<h1 class="portfolio title">Serviços</h1>
+			<h2 class="portfolio subtitle">Somos uma instituição sem fins lucrativos</h2>			
+		</hgroup>
+
+		<ul class="portfolio">
+			<div class="portfolio-row">
+				<a class="portfolio" href="./servicos.html#estoque">					
+					<img class="portfolio" src="./media/estoque.svg">
+					<h1 class="portfolio">Controle de Estoque</h1>
+					<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+					<h3 class="portfolio">Saiba mais >></h3>				
+				</a>
+				<a class="portfolio" href="./servicos.html#website">					
+					<img class="portfolio" src="./media/website.svg">
+					<h1 class="portfolio">Websites</h1>
+					<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+					<h3 class="portfolio">Saiba mais >></h3>
+				</a>
+				<a class="portfolio" href="./servicos.html#eletronica">
+						<img class="portfolio" src="./media/eletronica.svg">
+						<h1 class="portfolio">Soluções em eletrônica</h1>
+						<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+						<h3 class="portfolio">Saiba mais >></h3>
+				</a>
 			</div>
-		</div>
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
+
+			<div class="portfolio-row">
+				<a class="portfolio" href="./servicos.html#mobile">
+					<img class="portfolio" src="./media/app.svg">
+					<h1 class="portfolio">Aplicativos mobile</h1>
+					<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+					<h3 class="portfolio">Saiba mais >></h3>
+				</a>
+				<a class="portfolio" href="./servicos.html#excel">
+					<img class="portfolio" src="./media/excel.svg">
+					<h1 class="portfolio">Cursos de Excel</h1>
+					<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+					<h3 class="portfolio">Saiba mais >></h3>
+				</a>
+				<a class="portfolio" href="./servicos.html#dados">
+					<img class="portfolio" src="./media/dados.svg">
+					<h1 class="portfolio">Análise de dados</h1>
+					<h2 class="portfolio">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed interdum, tellus quis auctor convallis, orci dui interdum velit, quis mollis erat lectus ut neque. Aliquam aliquet elementum massa, sit amet feugiat sapien. Pellentesque malesuada justo eget imperdiet ullamcorper. Morbi risus dolor, blandit ac nisl quis, posuere consequat neque. Praesent pretium imperdiet odio, sit amet pellentesque ex euismod eget. Aenean posuere ante vitae tortor tincidunt pellentesque.</h2>
+					<h3 class="portfolio">Saiba mais >></h3>
+				</a>
 			</div>
-		</div>
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
-			</div>
-		</div>
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
-			</div>
-		</div>
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
-			</div>
-		</div>
-		<div class="container servicos-box">
-			<div class="servicos-icon"></div>
-			<div class="servicos-about">
-				<h1 class="subtitle">Lorem Ipsum</h1>
-				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam feugiat erat a leo imperdiet, nec convallis ante maximus. Ut faucibus magna vitae est euismod suscipit. Vivamus gravida magna id volutpat luctus. Etiam ornare libero non auctor venenatis. Sed ac ante et velit vehicula congue ac ut ex.</p>
-			</div>
-		</div>
+		</ul>
+
+		<a class="portfolio-contato" href="./contato.html">Realize seu diagnóstico gratuitamente!</a>
+
 	</div>
 
 	<!--Rodapé-->
@@ -127,5 +127,7 @@
 			<a href="https://www.linkedin.com/company/physisjr/"><img class="social" src="./media/linkedin.svg"></a>
 		</div>		
 	</footer>
+
+</body>
 
 </html>

@@ -180,27 +180,29 @@ a.menu:last-of-type{ /*Botão de contato*/
 	}
 
 	nav.menuMobile {
-		transition: 0.5s;
-		opacity: 0;
+		transition: 0.3s;
 		display: block;
 		text-align: center;
 		position: absolute;
-		background-color: rgb(255,255,255,.9);
+		background-color: rgb(255,255,255);
 		padding: 10px 0;
-		top: 50px;
+		top: calc(8vh + 10px);
 		left: 0;
-		width: 150px;
-		margin-top: 8px;
+		width: 0;
+		height: 100vh;
 		border-bottom-right-radius: 10px;
+		font-size: 0;
+		box-shadow: inset 1px 2px 2px 0 rgb(200,200,200);
 	}
 
 	a.menuMobile{
-		display: block;
+		display: inherit;
 		padding: 15px 5px;
 		font-family: 'Open Sans', sans-serif;
 		font-weight: 600;
-		font-size: 1em;
+		font-size: inherit;
 		color: black;
+		margin-bottom: 10px;
 	}
 	
 }
@@ -216,6 +218,7 @@ a.menu:last-of-type{ /*Botão de contato*/
 	width: calc(100% / 3);
 	float: left;
 	margin-bottom: 50px;
+	padding: 10px;
 }
 
 .apoio-img {
@@ -229,7 +232,6 @@ a.menu:last-of-type{ /*Botão de contato*/
 .apoio-desc {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 1em;
-	padding: 20px;
 }
 
 footer.rodape{
@@ -285,6 +287,17 @@ h1.rodape {
 		left: 0;
 		text-align: left;
 		padding-left: 20px;
+	}
+
+	.apoio-img {
+		height: 100px;
+	}
+	p.apoio-desc {
+		font-size: .5em;
+	}
+
+	.apoio-container {
+		width: 100%;
 	}
 }
 

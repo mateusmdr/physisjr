@@ -1,48 +1,118 @@
-.servicos {
-	padding-top: calc(8vh + 75px);
+.portfolio.container {
+	padding-top: calc(8vh + 20px);
 }
 
-.servicos-box {
-	height: 250px;
-	background-color: red;
-	border-bottom: 2px solid black;
+ul.portfolio {
+	display: table;
+	border-spacing: 20px;
+	border-collapse: separate;
+	margin: 50px auto;
 }
 
-.servicos-box:nth-of-type(2n) > .servicos-icon {
-	width: 200px;
-	height: 200px;
+a.portfolio{
+	display: table-cell;
+	box-sizing: border-box;
+	width: 80vw;
+	max-width: 500px;
+	border: 2px solid rgba(200,200,200,.7);
+	box-shadow: 2px 2px rgba(220,220,220,.5);
+	padding: 50px 10px;
+	border-radius: 5px;
+	transition: 0.5s;
 	position: relative;
-	float: left;
-	top: 25px;
-	margin-left: 50px;
-	background-color: blue;
 }
 
-.servicos-box:nth-of-type(2n + 1) > .servicos-icon {
-	width: 200px;
-	height: 200px;
-	position: relative;
-	float: right;
-	top: 25px;
-	margin-right: 50px;
-	background-color: blue;
+a.portfolio:hover {
+	background-color: #750000;
+	color: white;
+	transition: 0.5s;
 }
 
-.servicos-box:nth-of-type(2n) > .servicos-about {
-	float: left;
-	padding-left: 20px;
-	width: 500px;
-	text-align: justify;
-	position: relative;
-	top: 25px;
+div.portfolio-row{
+	display: table-row;
 }
 
-.servicos-box:nth-of-type(2n + 1) > .servicos-about {
-	float: right;
-	direction: rtl;
-	padding-right: 20px;
-	width: 500px;
-	text-align: justify;
-	position: relative;
-	top: 25px;
+a.portfolio > h1.portfolio{
+	font-size: 1.5em;
+	font-family: 'Raleway',sans-serif;
+	font-weight: bold;
+	padding: 10px 0;
 }
+
+a.portfolio > h2.portfolio{
+	font-size: 1.2em;
+	font-family: 'Open Sans',sans-serif;
+}
+
+a.portfolio > h3.portfolio {
+	position: absolute;
+	font-size: 1em;
+	font-family: 'Open Sans',sans-serif;
+	margin-top: 15px;
+	font-weight: bold;
+	border-radius: 5px;
+	bottom: 5px;
+}
+
+a.portfolio > img.portfolio {
+	height: 100px;
+	width: 100px;
+}
+
+a.portfolio-contato{
+	font-family: 'Raleway',sans-serif;
+	font-size: 1.8em;
+	background-color: #750000;
+	color: white;
+	padding: 10px;
+	border-radius: 5px;
+	font-weight: 600;
+}
+
+div.portfolio{
+	margin-bottom: 100px;
+}
+
+@media only screen and (max-width: 800px){
+	
+	ul.portfolio {
+		margin: 10px auto;
+	}
+
+	a.portfolio > img.portfolio{
+		height: 75px;
+		width: 75px;
+	}
+
+	hgroup.portfolio > h2.portfolio {
+		font-size: 1.2em;
+	}
+
+	a.portfolio > h1.portfolio{
+		font-size: 1.3em;
+	}
+
+	a.portfolio {
+		display: inline-block;
+		margin: 10px;
+	}
+
+	div.portfolio-row {
+		display: inline;
+	}
+
+	a.portfolio > h2.portfolio{
+		display:none;
+	}
+
+	a.portfolio:hover h2.portfolio{
+		display: static;
+	}
+
+	a.portfolio-contato{
+		font-size: 1em;
+	}
+}
+
+/*Fim do portfólio*/
+/*----------------*/
