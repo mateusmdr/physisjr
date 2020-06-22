@@ -10,23 +10,14 @@
 	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/contato.css">
+
+	<!--Scripts-->
+	<script src="./js/navbar.js"></script>
 </head>
 
 <body>
 
 	<!--Cabeçalho-->
-
-	<script>
-		function switchMenu(){
-			x = document.getElementById("menuMobile").style.opacity;
-
-			if (x=="1"){
-				document.getElementById("menuMobile").style.opacity = "0";
-			} else{
-				document.getElementById("menuMobile").style.opacity = "1";
-			}
-		}
-	</script>
 
 	<header>
 		<a href="./index.html">
@@ -41,7 +32,7 @@
 		</nav>
 		<img onclick="switchMenu()" class="menuMobile" src="./media/menu.svg">
 		<nav id="menuMobile" class="menuMobile">
-			<a class="menuMobile" href="#home">Home</a>
+			<a class="menuMobile" href="./index.html#home">Home</a>
 			<a class="menuMobile" href="./sobre.html">Sobre</a>			
 			<a class="menuMobile" href="./contato.html">Contato</a>
 			<a class="menuMobile" href="">Blog</a>
@@ -50,10 +41,36 @@
 	</header>
 
 	<!--Contato-->
-	<div id="contato"></div>
 
-	<div class="contato container">
+	<div class="contato container">	
+
 		<h2 class="contato title">Contato</h2>
+
+		<div class="form-contato container">
+			<form method="POST">
+				<div class="input-box">
+					<label for="nome">Nome*</label>
+					<input type="text" name="nome" id="nome" required>
+					<div class="clear"></div>
+				</div>
+				<div class="input-box">
+					<label for="email">Email*</label>
+					<input type="email" name="email" id="email" required>
+					<div class="clear"></div>
+				</div>
+				<div class="input-box">
+					<label for="observacoes">Observações</label>
+					<textarea name="observacoes" id="observacoes"></textarea>
+					<div class="clear"></div>
+				</div>
+				<div class="clear"></div>
+				<span class="form-desc"> Campos obrigatórios *</span>
+				<div class="input-box">
+					<input type="submit" value="Enviar">
+				</div>
+			</form>
+		</div>
+
 		<div class="contato-info container">
 			<div class="contato-left">
 				<div class="contato-item">
