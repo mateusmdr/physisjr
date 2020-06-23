@@ -18,23 +18,47 @@
 <body>
 
 	<?php
-		$nome = $_POST["nome"];
-		$email = $_POST["email"];
-		$assunto = $_POST["assunto"];
-		$observacoes = $_POST["observacoes"];
-		$data_envio = date('d/m/Y');
-		$hora_envio = date('H:i:s');
+		date_default_timezone_set("America/Sao_Paulo");
 
-		$headers  = 'MIME-Version: 1.0' . "\r\n";
-     	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
-      	$headers .= 'From: $nome <$email>';
+		if(isset($_POST["nome"])){
 
-		$enviaremail = mail("mateusmendoncadr@gmail.com","teste","aaa","From: mateusmendoncadr@gmail.com");
+			$nome = $_POST["nome"];
+			$email = $_POST["email"];
+			$assunto = $_POST["assunto"];
+			$observacoes = $_POST["observacoes"];
+			$data_envio = date('d/m/Y');
+			$hora_envio = date('H:i:s');
 
-		if($enviaremail){
-			echo "ebaa";
-		}else {
-			var_dump($enviaremail);
+			$headers  = 'MIME-Version: 1.0' . "\r\n";
+	     	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+	      	$headers .= "From: $nome <$email>";
+
+	      	$observacoes = str_replace("\n.","\n..",$observacoes);
+
+	      	$mensagem = "
+
+				<div style='width: 90%;margin: 0 auto;'>
+					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
+						<b>Mensagem recebida em $data_envio às $hora_envio\r\n</b><br>
+					</div>
+					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
+						<b>Nome:</b> $nome\r\n<br>
+					</div>
+					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
+						<b>Email:</b> $email\r\n<br>
+					</div>
+					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
+						<b>Assunto:</b> $assunto\r\n<br>
+					</div>
+					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;width:50%;text-align: justify;padding:5px;'>
+						<b>Observações:</b> $observacoes\r\n<br>
+					</div>
+				</div>
+			";
+
+	      	$assuntoEmail = "Contato pelo site: $nome";
+      	
+			$enviaremail = mail("mateusmendoncadr@gmail.com",$assuntoEmail,$mensagem,$headers);
 		}
 
 
@@ -50,7 +74,7 @@
 		<nav class="menu">
 			<a class="menu" href="./index.html#home">Home</a>
 			<a class="menu" href="./sobre.html">Sobre</a>			
-			<a class="menu" href="./contato.html">Contato</a>
+			<a class="menu" href="./contato.php">Contato</a>
 			<a class="menu" href="">Blog</a>
 			<a class="menu" href="./servicos.html">Serviços</a>
 		</nav>
@@ -58,7 +82,7 @@
 		<nav id="menuMobile" class="menuMobile">
 			<a class="menuMobile" href="./index.html#home">Home</a>
 			<a class="menuMobile" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" href="./contato.html">Contato</a>
+			<a class="menuMobile" href="./contato.php">Contato</a>
 			<a class="menuMobile" href="">Blog</a>
 			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>
@@ -114,13 +138,13 @@
 						<div class="input-box">
 							<select name="assunto" id="assunto" required>
 								<option selected disabled value="">Assunto*</option>
-								<option value="estoque">Controle de Estoque</option>
-								<option value="websites">Websites</option>
-								<option value="eletronica">Soluções em eletrônica</option>
-								<option value="mobile">Aplicativos mobile</option>
-								<option value="excel">Cursos de Excel</option>
-								<option value="dados">Análise de dados</option>
-								<option value="outros">Outros (descreva abaixo)</option>
+								<option value="Controle de Estoque">Controle de Estoque</option>
+								<option value="Websites">Websites</option>
+								<option value="Soluções em eletrônica">Soluções em eletrônica</option>
+								<option value="Aplicativos mobile">Aplicativos mobile</option>
+								<option value="Cursos de Excel">Cursos de Excel</option>
+								<option value="Análise de dados">Análise de dados</option>
+								<option value="Outros">Outros (descreva abaixo)</option>
 							</select>
 						</div>
 
