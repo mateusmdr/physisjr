@@ -127,19 +127,20 @@ a.portfolio > h1.portfolio{
 a.portfolio > h2.portfolio{
 	font-size: 1.2em;
 	font-family: 'Open Sans',sans-serif;
+	height: 54px;
 }
 
 a.portfolio > h3.portfolio {
 	display: inline-block;
 	padding: 5px;
-	font-size: 1em;
+	font-size: 1.5em;
 	font-family: 'Open Sans',sans-serif;
 	color: white;
 	background-color: #750000;
-	margin-top: 20px;
+	margin-top: 30px;
 	font-weight: bold;
 	border-radius: 5px;
-	bottom: 5px;
+	position: relative;
 }
 
 a.portfolio > img.portfolio {
@@ -207,6 +208,8 @@ div.portfolio{
 	a.portfolio-contato{
 		font-size: 1em;
 		display: inline-block;
+		padding: 5px;
+		width: 80%;
 	}
 }
 

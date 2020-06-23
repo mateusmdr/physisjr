@@ -17,6 +17,30 @@
 
 <body>
 
+	<?php
+		$nome = $_POST["nome"];
+		$email = $_POST["email"];
+		$assunto = $_POST["assunto"];
+		$observacoes = $_POST["observacoes"];
+		$data_envio = date('d/m/Y');
+		$hora_envio = date('H:i:s');
+
+		$headers  = 'MIME-Version: 1.0' . "\r\n";
+     	$headers .= 'Content-type: text/html; charset=utf-8' . "\r\n";
+      	$headers .= 'From: $nome <$email>';
+
+		$enviaremail = mail("mateusmendoncadr@gmail.com","teste","aaa","From: mateusmendoncadr@gmail.com");
+
+		if($enviaremail){
+			echo "ebaa";
+		}else {
+			var_dump($enviaremail);
+		}
+
+
+		//echo $nome . $email . $assunto . $observacoes;
+	?>
+
 	<!--Cabeçalho-->
 
 	<header>
@@ -87,6 +111,19 @@
 							<label for="email">Email*</label>
 							<input type="email" name="email" id="email" required>
 						</div>
+						<div class="input-box">
+							<select name="assunto" id="assunto" required>
+								<option selected disabled value="">Assunto*</option>
+								<option value="estoque">Controle de Estoque</option>
+								<option value="websites">Websites</option>
+								<option value="eletronica">Soluções em eletrônica</option>
+								<option value="mobile">Aplicativos mobile</option>
+								<option value="excel">Cursos de Excel</option>
+								<option value="dados">Análise de dados</option>
+								<option value="outros">Outros (descreva abaixo)</option>
+							</select>
+						</div>
+
 						<div class="input-box">
 							<label for="observacoes">Observações*</label>
 							<textarea name="observacoes" id="observacoes" required></textarea>
