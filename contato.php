@@ -125,15 +125,20 @@
 
 			<div class="contato-box-right">
 				<div class="form-contato">
+				<h2 class="form-title subtitle">PEÇA NOSSA AJUDA</h2>				
 					<form method="POST">
-						<div class="input-box">
+						<div class="input-box nome">
 							<label for="nome">Nome*</label>
-							<input type="text" name="nome" id="nome" required>
+							<input type="text" name="nome" id="nome" placeholder="Nome pessoal ou organizacional" required>
+						</div>
+						<div class="input-box telefone">
+							<label for="telefone">Telefone*</label>
+							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 9 9410-7552" required>
 						</div>
 						<div class="clear"></div>
 						<div class="input-box">
 							<label for="email">Email*</label>
-							<input type="email" name="email" id="email" required>
+							<input type="email" name="email" id="email" placeholder="Ex: contato@physisjr.com" required>
 						</div>
 						<div class="input-box">
 							<select name="assunto" id="assunto" required>
@@ -149,14 +154,11 @@
 						</div>
 
 						<div class="input-box">
-							<label for="observacoes">Observações*</label>
-							<textarea name="observacoes" id="observacoes" required></textarea>
+							<label for="observacoes">Em que podemos ajudar? *</label>
+							<textarea name="observacoes" id="observacoes" placeholder="Escreva aqui sua mensagem..." required></textarea>
 						</div>
 						<div class="input-box">
-							<span class="form-desc"> Campos obrigatórios *</span>
-						</div>
-						<div class="input-box">
-							<input type="submit" value="Mande seu problema!">
+							<input type="submit" value="Pedir meu projeto">
 						</div>
 					</form>
 				</div>

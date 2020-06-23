@@ -63,6 +63,127 @@ a.contato-button:hover {
 	padding: 12px;
 }
 
+.apresentacao-box-left {
+	width: 70%;
+	float: left;
+}
+
+.apresentacao-box-right {
+	width: 30%;
+	float:left;
+	background-color: white;
+	position: relative;
+	right: 200px;
+}
+
+.form-contato{
+	width: 100%;
+	max-width: 1000px;
+	height: 100%;
+	padding: 30px;
+	border: solid 1px rgb(200,200,200);
+}
+
+select {
+	width: 300px;
+	height: 50px;
+	padding: 5px;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 20px;
+	text-align: center;
+	float: left;
+	font-weight: bold;
+	clear: both;
+}
+
+select:focus {
+	background-color: white;
+	border: 2px solid black;
+}
+
+option[disabled] {
+	font-family: 'Open Sans',sans-serif;
+	font-weight: bold;
+	display: none;
+}
+
+
+.input-box {
+	padding: 20px;
+	margin: 0 auto;
+	width: 90%;
+	clear: both;
+}
+
+.input-box > input[type="text"], .input-box > input[type="email"]  {
+	padding: 5px;
+	width: 100%;
+	height: 30px;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	padding: 5px;
+	box-sizing: content-box;
+	border: 1px solid grey;
+	border-radius: 5px;
+	clear: both;
+}
+
+.input-box > textarea {
+	width: 100%;
+	height: 100px;
+	resize: none;
+	padding: 5px;
+	box-sizing: content-box;
+	font-family: 'Raleway', sans-serif;
+	font-size: 20px;
+	border: 1px solid grey;
+	border-radius: 5px;
+}
+
+:focus {
+	background-color: white;
+}
+
+.input-box > input[type="submit"]{
+	width: 300px;
+	height: 50px;
+	font-size: 25px;
+	font-family: 'Raleway', sans-serif;
+	font-weight: bold;
+	background-color: #750000;
+	color: white;
+	border: 1px groove black;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: .3s;
+	clear: both;
+}
+
+.input-box > input[type="submit"]:hover {
+	background-color: #8f0000;
+	transition: .3s;
+}
+
+.input-box > label{
+	position: relative;
+	bottom: 3px;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1.5em;
+	color: black;
+	font-weight: bold;
+	clear: both;
+	text-align: left;
+	display: block;
+}
+
+.form-desc {
+	font-family: 'Open Sans',sans-serif;
+	font-size: 1.5em;
+	font-weight: bold;
+	color: #750000;
+}
+
+
 @media only screen and (max-width: 800px){
 	h1.apresentacao {
 		font-size: 3em;
