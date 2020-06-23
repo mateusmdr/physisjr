@@ -13,6 +13,7 @@
 
 	<!--Scripts-->
 	<script src="./js/navbar.js"></script>
+	<script src="./js/portfolio.js"></script>
 </head>
 
 <body>
@@ -40,6 +41,12 @@
 			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>
 	</header>
+
+	<!--Pop-up-->
+
+	<div class="opacidade">
+
+	</div>
 
 	<!--Apresentação-->
 	<div class="apresentacao container">
@@ -77,44 +84,44 @@
 
 		<ul class="portfolio">
 			<div class="portfolio-row">
-				<a class="portfolio" href="./servicos.html#estoque">					
+				<a class="portfolio" href="./servicos.html#estoque" onmouseover="portfolioOver(1)" onmouseout="portfolioOut(1)">					
 					<img class="portfolio" src="./media/estoque.svg">
 					<h1 class="portfolio">Controle de Estoque</h1>
 					<h2 class="portfolio">Melhore a gestão de seus produtos</h2>
-					<h3 class="portfolio">Saiba mais >></h3>				
+					<h3 id="ca1" class="portfolio">Saiba mais >></h3>				
 				</a>
-				<a class="portfolio" href="./servicos.html#website">					
+				<a class="portfolio" href="./servicos.html#website" onmouseover="portfolioOver(2)" onmouseout="portfolioOut(2)">					
 					<img class="portfolio" src="./media/website.svg">
 					<h1 class="portfolio">Websites</h1>
 					<h2 class="portfolio">Conecte-se ao mundo e atinja um maior público</h2>
-					<h3 class="portfolio">Saiba mais >></h3>
+					<h3 id="ca2" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#eletronica">
+				<a class="portfolio" href="./servicos.html#eletronica" onmouseover="portfolioOver(3)" onmouseout="portfolioOut(3)">
 						<img class="portfolio" src="./media/eletronica.svg">
 						<h1 class="portfolio">Soluções em eletrônica</h1>
 						<h2 class="portfolio">Automatize seus processos com mais eficiência</h2>
-						<h3 class="portfolio">Saiba mais >></h3>
+						<h3 id="ca3" class="portfolio">Saiba mais >></h3>
 				</a>
 			</div>
 
 			<div class="portfolio-row">
-				<a class="portfolio" href="./servicos.html#mobile">
+				<a class="portfolio" href="./servicos.html#mobile" onmouseover="portfolioOver(4)" onmouseout="portfolioOut(4)">
 					<img class="portfolio" src="./media/app.svg">
 					<h1 class="portfolio">Aplicativos mobile</h1>
 					<h2 class="portfolio">Facilite o acesso aos seus serviços</h2>
-					<h3 class="portfolio">Saiba mais >></h3>
+					<h3 id="ca4" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#excel">
+				<a class="portfolio" href="./servicos.html#excel" onmouseover="portfolioOver(5)" onmouseout="portfolioOut(5)">
 					<img class="portfolio" src="./media/excel.svg">
 					<h1 class="portfolio">Cursos de Planilhas</h1>
 					<h2 class="portfolio">Aprenda a ferramenta mais requisitada do mercado</h2>
-					<h3 class="portfolio">Saiba mais >></h3>
+					<h3 id="ca5" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#dados">
+				<a class="portfolio" href="./servicos.html#dados" onmouseover="portfolioOver(6)" onmouseout="portfolioOut(6)">
 					<img class="portfolio" src="./media/dados.svg">
 					<h1 class="portfolio">Análise de dados</h1>
 					<h2 class="portfolio">Tome decisões baseadas em estatísticas internas</h2>
-					<h3 class="portfolio">Saiba mais >></h3>
+					<h3 id="ca6" class="portfolio">Saiba mais >></h3>
 				</a>
 			</div>
 		</ul>

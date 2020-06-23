@@ -101,13 +101,16 @@ div.contato-box{
 	height: 60vh;
 	max-width: 1500px;
 	margin-bottom: 120px;
+	background-color: #750000;
+	border-radius: 10px;
 }
 
 .contato-box-left {
 	width: 40%;
 	height: 100%;
 	float: left;
-	text-align: center;
+	text-align: center;	
+	border-right: 4px dotted white;
 }
 .contato-info {
 	height: 100%;
@@ -124,7 +127,6 @@ div.contato-box{
 .contato-item {
 	height: calc(100% / 3);
 	width: 100%;
-	border: 1px solid rgb(200,200,200);
 	position: relative;
 }
 
@@ -136,10 +138,12 @@ div.contato-box{
 	display: block;
 }
 
+h3.contato {
+	color: white;
+}
+
 .contato-item > a > span {
 	display: inline-block;
-	color: blue;
-	text-decoration: underline;
 	padding-left: 5px;
 	font-size: 1.5em;
 	font-family: 'Open Sans', sans-serif;
@@ -147,6 +151,11 @@ div.contato-box{
 	position: relative;
 	bottom: 10px;
 	padding-top: 30px;
+	color: white;
+}
+
+.contato-item:first-child > a > span {
+	text-decoration: underline;
 }
 
 .contato-mapa {

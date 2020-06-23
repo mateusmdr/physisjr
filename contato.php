@@ -133,7 +133,7 @@
 						</div>
 						<div class="input-box telefone">
 							<label for="telefone">Telefone*</label>
-							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 9 9410-7552" required>
+							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 9 9410-7552" pattern="\d*" required>
 						</div>
 						<div class="clear"></div>
 						<div class="input-box">

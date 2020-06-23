@@ -262,6 +262,7 @@ a.portfolio > h3.portfolio {
 	font-weight: bold;
 	border-radius: 5px;
 	position: relative;
+	transition: 0.5s;
 }
 
 a.portfolio > img.portfolio {
