@@ -6,24 +6,24 @@ h2.contato {
 }
 
 .form-contato{
-	width: 80%;
+	width: 100%;
 	max-width: 1000px;
+	height: 100%;
 	margin-bottom: 100px;
-	padding: 50px;
+	padding: 30px;
 	border: solid 1px rgb(200,200,200);
 }
 
 .input-box {
 	padding: 20px;
 	margin: 0 auto;
-	width: 70%;
+	width: 90%;
+	clear: both;
 }
 
 .input-box > input[type="text"], .input-box > input[type="email"]  {
-	float: right;
-	display: block;
 	padding: 5px;
-	width: 70%;
+	width: 100%;
 	height: 30px;
 	font-family: 'Raleway', sans-serif;
 	font-size: 20px;
@@ -31,11 +31,11 @@ h2.contato {
 	box-sizing: content-box;
 	border: 1px solid grey;
 	border-radius: 5px;
+	clear: both;
 }
 
 .input-box > textarea {
-	float: right;
-	width: 70%;
+	width: 100%;
 	height: 150px;
 	resize: none;
 	padding: 5px;
@@ -52,7 +52,7 @@ h2.contato {
 }
 
 .input-box > input[type="submit"]{
-	width: 100px;
+	width: 300px;
 	height: 50px;
 	font-size: 25px;
 	font-family: 'Raleway', sans-serif;
@@ -61,6 +61,14 @@ h2.contato {
 	color: white;
 	border: 1px groove black;
 	border-radius: 5px;
+	cursor: pointer;
+	transition: .3s;
+	clear: both;
+}
+
+.input-box > input[type="submit"]:hover {
+	background-color: #8f0000;
+	transition: .3s;
 }
 
 .input-box > label{
@@ -69,8 +77,10 @@ h2.contato {
 	font-family: 'Open Sans',sans-serif;
 	font-size: 1.5em;
 	color: black;
-	float: left;
 	font-weight: bold;
+	clear: both;
+	text-align: left;
+	display: block;
 }
 
 .form-desc {
@@ -84,15 +94,25 @@ div.email, div.telefone {
 	display: inline-block;
 }
 
-div.contato-info{
+div.contato-box{
 	width: 80vw;
-	height: 40vw;
-	max-height: 500px;
-	max-width: 1000px;
+	height: 670px;
+	max-width: 1500px;
+	margin-bottom: 120px;
 }
 
-.contato-left, .contato-right{
-	width: 50%;
+.contato-box-left {
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: center;
+}
+.contato-info {
+	height: 100%;
+}
+
+.contato-box-right {
+	width: 60%;
 	height: 100%;
 	float: left;
 }
@@ -122,11 +142,12 @@ div.contato-info{
 	line-height: 40px;
 	position: relative;
 	bottom: 10px;
+	padding-top: 30px;
 }
 
 .contato-mapa {
 	width: 100%;
-	height: 100%;
+	height: 300px;
 	border: 1px solid rgb(200,200,200);
 }
 
@@ -142,12 +163,14 @@ img.contato {
 		display: none;
 	}
 
-	div.contato-info {
-		height: 400px;
+	div.contato-box {
+		height: auto;
+		margin-bottom: 50px;
 	}
 
 	.contato-item > a > span {
 		font-size: 1em;
+		padding-top: 0;
 	}
 
 	.contato-item > a > img {
@@ -155,9 +178,52 @@ img.contato {
 		width: 30px;
 	}
 
-	.contato-left {
+	.contato-box-left {
+		width: 100%;
+		height: 400px;
+		display: block;
+		float: none;
+	}
+
+	.contato-box-right {
+		width: 100%;
+		display: block;
+		float: none;
+		height: auto;
+		clear: both;
+	}
+
+	.input-box > input[type="text"], .input-box > input[type="email"] {
+		display: block;
+		float: none;
 		width: 100%;
 	}
+
+	.input-box > textarea {
+		width: 100%;
+		height: 90px;
+		display: block;
+		float: none;
+	}
+
+	.form-contato label, .form-contato span {
+		font-size: 1.2em
+	}
+
+	.input-box > input[type="submit"] {
+		font-size: 1em;
+		padding: 5px;
+		width: 200px;
+		box-sizing: border-box;
+		height: 50px;
+	}
+
+	.form-contato {
+		padding: 0;
+		margin-bottom: 0;
+	}
+
+
 
 }
 /*Fim do contato*/

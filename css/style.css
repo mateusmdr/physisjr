@@ -137,6 +137,11 @@ a.menu:last-of-type{ /*Botão de contato*/
 	color: white;
 }
 
+a.menu:last-of-type:hover {
+	background-color: #8f0000;
+	padding: 8px 22px;
+}
+
 @media only screen and (max-width: 800px){
 
 	/*alterando padrões de texto*/
@@ -219,6 +224,10 @@ a.menu:last-of-type{ /*Botão de contato*/
 	float: left;
 	margin-bottom: 50px;
 	padding: 10px;
+}
+
+.apoio-section {
+	clear: both;
 }
 
 .apoio-img {
