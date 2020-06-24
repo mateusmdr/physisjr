@@ -10,7 +10,7 @@
 	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="stylesheet" type="text/css" href="./css/contato.css">
-	
+
 	<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
 
 	<!--Scripts-->
@@ -85,7 +85,7 @@
 		<nav class="menu">
 			<a class="menu" href="./index.html#home">Home</a>
 			<a class="menu" href="./sobre.html">Sobre</a>			
-			<a class="menu" href="./contato.php">Contato</a>
+			<a class="menu" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
 			<a class="menu" href="">Blog</a>
 			<a class="menu" href="./servicos.html">Serviços</a>
 		</nav>
@@ -93,7 +93,7 @@
 		<nav id="menuMobile" class="menuMobile">
 			<a class="menuMobile" href="./index.html#home">Home</a>
 			<a class="menuMobile" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" href="./contato.php">Contato</a>
+			<a class="menuMobile" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
 			<a class="menuMobile" href="">Blog</a>
 			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>

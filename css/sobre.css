@@ -3,6 +3,7 @@
 
 div.sobre{
 	padding: 50px 0;
+	padding-top: calc(8vh + 20px);
 }
 
 p.sobre{
