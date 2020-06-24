@@ -169,7 +169,6 @@ a.menu:last-of-type{ /*Botão de contato*/
 
 a.menu:last-of-type:hover {
 	background-color: #8f0000;
-	padding: 8px 22px;
 }
 
 @media only screen and (max-width: 800px){

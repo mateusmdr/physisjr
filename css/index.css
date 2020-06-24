@@ -268,7 +268,6 @@ a.portfolio-contato{
 a.portfolio-contato:hover {
 	background-color: #8f0000;
 	transition: 0.5s;
-	padding: 12px;
 }
 
 div.portfolio{

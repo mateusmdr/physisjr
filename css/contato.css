@@ -7,24 +7,24 @@ h2.contato {
 
 .contato-box{
 	width: 80vw;
-	height: 70vh;
 	max-width: 1500px;
+	height: calc(70vh + 404px);
 	margin-bottom: 120px;
 	background-color: #750000;
 	border-radius: 10px;
 }
 
 .contato-box-left {
+	height: 70vh;
 	width: 40%;
-	height: 100%;
 	float: left;
 	text-align: center;	
 	border-right: 4px dotted white;
 }
 
 .contato-box-right {
+	height: 70vh;
 	width: 60%;
-	height: 100%;
 	float: left;
 }
 
@@ -179,9 +179,15 @@ h3.contato {
 
 .contato-mapa {
 	width: 100%;
-	height: 304px;
-	border: 2px solid rgb(200,200,200);
-	padding-bottom: 3px;
+	height: 404px;
+	border: 2px solid #750000;
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
+}
+
+iframe#mapa {
+	border-bottom-right-radius: 10px;
+	border-bottom-left-radius: 10px;
 }
 
 img.contato {
