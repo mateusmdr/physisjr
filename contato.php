@@ -20,6 +20,17 @@
 	<?php
 		date_default_timezone_set("America/Sao_Paulo");
 
+		function assunto($ref) {
+			if (isset($_GET["assunto"])){
+				if ($ref == $_GET["assunto"]) {
+					return "selected";
+				}else {
+					return "";
+				}
+			}
+		}
+
+		isset($_GET["assunto"])?$assunto=$_GET["assunto"]:"";
 		if(isset($_POST["nome"])){
 
 			$nome = $_POST["nome"];
@@ -37,7 +48,7 @@
 
 	      	$mensagem = "
 
-				<div style='width: 90%;margin: 0 auto;'>
+				<div style='width: 90%;margin: 0 auto;'>	
 					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
 						<b>Mensagem recebida em $data_envio às $hora_envio\r\n</b><br>
 					</div>
@@ -61,8 +72,6 @@
 			$enviaremail = mail("mateusmendoncadr@gmail.com",$assuntoEmail,$mensagem,$headers);
 		}
 
-
-		//echo $nome . $email . $assunto . $observacoes;
 	?>
 
 	<!--Cabeçalho-->
@@ -97,35 +106,32 @@
 		<div class="contato-box container">
 
 			<div class="contato-box-left">
-				<div class="contato-info">
-					<div class="contato-item">
-						<h3 class="contato subtitle">Email</h3>
-						<a href="mailto:contato@physisjr.com">
-						<img class="contato" src="./media/gmail.svg">
-						<span class="contato">contato@physisjr.com</span>
-						</a>
-					</div>
-					<div class="contato-item">
-						<h3 class="contato subtitle">Telefone</h3>
-						<a href="tel:+5531994107552">
-							<img class="contato" src="./media/phone.svg">
-							<span class="contato">(31) 9 9410-7552</span>
-						</a>
-					</div>
-					<div class="contato-item">
-						<h3 class="contato subtitle">WhatsApp</h3>
-						<a href="https://wa.me/5531994107552">
-							<img class="contato" src="./media/whatsapp.svg">
-							<span class="contato">(31) 9 9410-7552</span>
-						</a>
-					</div>
-						
+				<div class="contato-item">
+					<h3 class="contato subtitle">Email</h3>
+					<a href="mailto:contato@physisjr.com">
+					<img class="contato" src="./media/gmail.svg">
+					<span class="contato">contato@physisjr.com</span>
+					</a>
+				</div>
+				<div class="contato-item">
+					<h3 class="contato subtitle">Telefone</h3>
+					<a href="tel:+5531994107552">
+						<img class="contato" src="./media/phone.svg">
+						<span class="contato">(31) 99410-7552</span>
+					</a>
+				</div>
+				<div class="contato-item">
+					<h3 class="contato subtitle">WhatsApp</h3>
+					<a href="https://wa.me/5531994107552">
+						<img class="contato" src="./media/whatsapp.svg">
+						<span class="contato">(31) 99410-7552</span>
+					</a>
 				</div>
 			</div>
 
 			<div class="contato-box-right">
 				<div class="form-contato">
-				<h2 class="form-title subtitle">PEÇA NOSSA AJUDA</h2>				
+					<h2 class="form-title subtitle">PEÇA NOSSA AJUDA</h2>				
 					<form method="POST">
 						<div class="input-box nome">
 							<label for="nome">Nome*</label>
@@ -133,7 +139,7 @@
 						</div>
 						<div class="input-box telefone">
 							<label for="telefone">Telefone*</label>
-							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 9 9410-7552" pattern="\d*" required>
+							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 99410-7552" pattern="\d*" required>
 						</div>
 						<div class="clear"></div>
 						<div class="input-box">
@@ -142,14 +148,14 @@
 						</div>
 						<div class="input-box">
 							<select name="assunto" id="assunto" required>
-								<option selected disabled value="">Assunto*</option>
-								<option value="Controle de Estoque">Controle de Estoque</option>
-								<option value="Websites">Websites</option>
-								<option value="Soluções em eletrônica">Soluções em eletrônica</option>
-								<option value="Aplicativos mobile">Aplicativos mobile</option>
-								<option value="Cursos de Excel">Cursos de Excel</option>
-								<option value="Análise de dados">Análise de dados</option>
-								<option value="Outros">Outros (descreva abaixo)</option>
+								<option <?php echo ((!isset($_GET["assunto"]))?"selected":"") ?> disabled value="">Assunto*</option>
+								<option <?php echo (assunto("estoque")); ?> value="Controle de Estoque">Controle de Estoque</option>
+								<option <?php echo (assunto("websites")); ?> value="Websites">Websites</option>
+								<option <?php echo (assunto("eletronica")); ?> value="Soluções em eletrônica">Soluções em eletrônica</option>
+								<option <?php echo (assunto("mobile")); ?> value="Aplicativos mobile">Aplicativos mobile</option>
+								<option <?php echo (assunto("planilhas")); ?> value="Cursos de Excel">Cursos de Planilhas</option>
+								<option <?php echo (assunto("dados")); ?> value="Análise de dados">Análise de dados</option>
+								<option  value="Outros">Outros (descreva abaixo)</option>
 							</select>
 						</div>
 

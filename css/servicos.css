@@ -42,6 +42,7 @@ a.portfolio > h1.portfolio{
 a.portfolio > h2.portfolio{
 	font-size: 1.2em;
 	font-family: 'Open Sans',sans-serif;
+	text-align: justify;
 }
 
 a.portfolio > h3.portfolio {
@@ -55,6 +56,7 @@ a.portfolio > h3.portfolio {
 	font-weight: bold;
 	border-radius: 5px;
 	bottom: 5px;
+	transition: 0.5s;
 }
 
 a.portfolio > img.portfolio {

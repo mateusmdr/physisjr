@@ -5,6 +5,31 @@ h2.contato {
 	padding: calc(8vh + 50px) 0 50px 0;
 }
 
+.contato-box{
+	width: 80vw;
+	height: 70vh;
+	max-width: 1500px;
+	margin-bottom: 120px;
+	background-color: #750000;
+	border-radius: 10px;
+}
+
+.contato-box-left {
+	width: 40%;
+	height: 100%;
+	float: left;
+	text-align: center;	
+	border-right: 4px dotted white;
+}
+
+.contato-box-right {
+	width: 60%;
+	height: 100%;
+	float: left;
+}
+
+/*Formulário*/
+
 .form-contato{
 	width: 100%;
 	max-width: 1000px;
@@ -54,7 +79,7 @@ h2.contato {
 	font-family: 'Open Sans', sans-serif;
 	font-weight: bold;
 	background-color: white;
-	color: #750000;
+	color: black;
 	border: 1px groove black;
 	border-radius: 5px;
 	cursor: pointer;
@@ -73,7 +98,6 @@ h2.contato {
 .input-box.nome, .input-box.telefone {
 	width: 45%;
 	display: inline-block;
-	margin-left: -2px auto;
 }
 
 .contato-box-right h2 {
@@ -92,42 +116,37 @@ h2.contato {
 	display: block;
 }
 
-div.email, div.telefone {
-	display: inline-block;
-}
-
-div.contato-box{
-	width: 80vw;
-	height: 60vh;
-	max-width: 1500px;
-	margin-bottom: 120px;
-	background-color: #750000;
-	border-radius: 10px;
-}
-
-.contato-box-left {
-	width: 40%;
-	height: 100%;
+select {
+	margin: 10px 0;
+	width: 100%;
+	height: 40px;
+	padding: 5px;
+	font-family: 'Open Sans',sans-serif;
+	font-size: 20px;
+	text-align: center;
 	float: left;
-	text-align: center;	
-	border-right: 4px dotted white;
-}
-.contato-info {
-	height: 100%;
+	clear: both;
+	border-radius: 5px;
+	background-color: white;
+	color: #777;
 }
 
-.contato-box-right {
-	width: 60%;
-	height: 100%;
-	float: left;
-	background-color: #750000;
-	border-radius: 20px;
+select:focus {
+	background-color: white;
+	border: 2px solid black;
 }
+
+option[disabled] {
+	font-family: 'Open Sans',sans-serif;
+	font-weight: bold;
+	display: none;
+}
+
+/*Fim do formulário*/
 
 .contato-item {
 	height: calc(100% / 3);
 	width: 100%;
-	position: relative;
 }
 
 .contato-item > a {
@@ -171,32 +190,6 @@ img.contato {
 	height: 40px;
 }
 
-select {
-	margin: 10px 0;
-	width: 100%;
-	height: 40px;
-	padding: 5px;
-	font-family: 'Open Sans',sans-serif;
-	font-size: 20px;
-	text-align: center;
-	float: left;
-	clear: both;
-	border-radius: 5px;
-	background-color: white;
-	color: #777;
-}
-
-select:focus {
-	background-color: white;
-	border: 2px solid black;
-}
-
-option[disabled] {
-	font-family: 'Open Sans',sans-serif;
-	font-weight: bold;
-	display: none;
-}
-
 @media only screen and (max-width: 800px) {
 	.contato-right, .contato-mapa, iframe#mapa {
 		display: none;
@@ -222,6 +215,8 @@ option[disabled] {
 		height: 400px;
 		display: block;
 		float: none;
+		border-right: 0;
+		border-bottom: 4px dotted white;
 	}
 
 	.contato-box-right {
@@ -230,12 +225,18 @@ option[disabled] {
 		float: none;
 		height: auto;
 		clear: both;
+		padding: 20px 0;
 	}
 
-	.input-box > input[type="text"], .input-box > input[type="email"] {
+	.input-box > input[type="text"], .input-box > input[type="email"],.input-box > input[type="tel"], select, .input-box > textarea {
 		display: block;
 		float: none;
 		width: 100%;
+		font-size: .8em;
+	}
+
+	.input-box > input[type="submit"]{
+		font-size: 1.2em;
 	}
 
 	.input-box > textarea {
@@ -246,20 +247,16 @@ option[disabled] {
 	}
 
 	.form-contato label, .form-contato span {
-		font-size: 1.2em
-	}
-
-	.input-box > input[type="submit"] {
-		font-size: 1em;
-		padding: 5px;
-		width: 200px;
-		box-sizing: border-box;
-		height: 50px;
+		font-size: 1em
 	}
 
 	.form-contato {
 		padding: 0;
 		margin-bottom: 0;
+	}
+
+	.input-box.nome, .input-box.telefone {
+		width: 90%;
 	}
 
 

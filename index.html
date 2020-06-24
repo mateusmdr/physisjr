@@ -58,14 +58,47 @@
 						<h2 class="apresentacao">Engenharia e Tecnologia</h2>
 						<h3 class="apresentacao">Realizando projetos de baixo custo desde 2006</h3>
 					</hgroup>
-
-					<div class="contato-button">
-						<a class="contato-button" href="./contato.php">Entre em contato</a>
-					</div>
 				</div>
 
 				<div class="apresentacao-box-right">
-					
+					<div class="form-contato">
+					<h2 class="form-title subtitle">PEÇA NOSSA AJUDA</h2>				
+					<form method="POST" action="./contato.php">
+						<div class="input-box nome">
+							<label for="nome">Nome*</label>
+							<input type="text" name="nome" id="nome" placeholder="Nome pessoal ou organizacional" required>
+						</div>
+						<div class="input-box telefone">
+							<label for="telefone">Telefone*</label>
+							<input type="tel" name="telefone" id="telefone" placeholder="Ex: (31) 99410-7552" pattern="\d*" required>
+						</div>
+						<div class="clear"></div>
+						<div class="input-box">
+							<label for="email">Email*</label>
+							<input type="email" name="email" id="email" placeholder="Ex: contato@physisjr.com" required>
+						</div>
+						<div class="input-box">
+							<select name="assunto" id="assunto" required>
+								<option selected disabled value="">Assunto*</option>
+								<option value="Controle de Estoque">Controle de Estoque</option>
+								<option value="Websites">Websites</option>
+								<option value="Soluções em eletrônica">Soluções em eletrônica</option>
+								<option value="Aplicativos mobile">Aplicativos mobile</option>
+								<option value="Cursos de Excel">Cursos de Planilhas</option>
+								<option value="Análise de dados">Análise de dados</option>
+								<option value="Outros">Outros (descreva abaixo)</option>
+							</select>
+						</div>
+
+						<div class="input-box">
+							<label for="observacoes">Em que podemos ajudar? *</label>
+							<textarea name="observacoes" id="observacoes" placeholder="Escreva aqui sua mensagem..." required></textarea>
+						</div>
+						<div class="input-box">
+							<input type="submit" value="Pedir meu projeto">
+						</div>
+					</form>
+				</div>
 				</div>
 			</div>
 			<div class="clear"></div>
@@ -84,19 +117,19 @@
 
 		<ul class="portfolio">
 			<div class="portfolio-row">
-				<a class="portfolio" href="./servicos.html#estoque" onmouseover="portfolioOver(1)" onmouseout="portfolioOut(1)">					
+				<a class="portfolio" href="./contato.php?assunto=estoque" onmouseover="portfolioOver(1)" onmouseout="portfolioOut(1)">					
 					<img class="portfolio" src="./media/estoque.svg">
 					<h1 class="portfolio">Controle de Estoque</h1>
 					<h2 class="portfolio">Melhore a gestão de seus produtos</h2>
 					<h3 id="ca1" class="portfolio">Saiba mais >></h3>				
 				</a>
-				<a class="portfolio" href="./servicos.html#website" onmouseover="portfolioOver(2)" onmouseout="portfolioOut(2)">					
+				<a class="portfolio" href="./contato.php?assunto=websites" onmouseover="portfolioOver(2)" onmouseout="portfolioOut(2)">					
 					<img class="portfolio" src="./media/website.svg">
 					<h1 class="portfolio">Websites</h1>
 					<h2 class="portfolio">Conecte-se ao mundo e atinja um maior público</h2>
 					<h3 id="ca2" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#eletronica" onmouseover="portfolioOver(3)" onmouseout="portfolioOut(3)">
+				<a class="portfolio" href="./contato.php?assunto=eletronica" onmouseover="portfolioOver(3)" onmouseout="portfolioOut(3)">
 						<img class="portfolio" src="./media/eletronica.svg">
 						<h1 class="portfolio">Soluções em eletrônica</h1>
 						<h2 class="portfolio">Automatize seus processos com mais eficiência</h2>
@@ -105,19 +138,19 @@
 			</div>
 
 			<div class="portfolio-row">
-				<a class="portfolio" href="./servicos.html#mobile" onmouseover="portfolioOver(4)" onmouseout="portfolioOut(4)">
+				<a class="portfolio" href="./contato.php?assunto=mobile" onmouseover="portfolioOver(4)" onmouseout="portfolioOut(4)">
 					<img class="portfolio" src="./media/app.svg">
 					<h1 class="portfolio">Aplicativos mobile</h1>
 					<h2 class="portfolio">Facilite o acesso aos seus serviços</h2>
 					<h3 id="ca4" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#excel" onmouseover="portfolioOver(5)" onmouseout="portfolioOut(5)">
+				<a class="portfolio" href="./contato.php?assunto=planilhas" onmouseover="portfolioOver(5)" onmouseout="portfolioOut(5)">
 					<img class="portfolio" src="./media/excel.svg">
 					<h1 class="portfolio">Cursos de Planilhas</h1>
 					<h2 class="portfolio">Aprenda a ferramenta mais requisitada do mercado</h2>
 					<h3 id="ca5" class="portfolio">Saiba mais >></h3>
 				</a>
-				<a class="portfolio" href="./servicos.html#dados" onmouseover="portfolioOver(6)" onmouseout="portfolioOut(6)">
+				<a class="portfolio" href="./contato.php?assunto=dados" onmouseover="portfolioOver(6)" onmouseout="portfolioOut(6)">
 					<img class="portfolio" src="./media/dados.svg">
 					<h1 class="portfolio">Análise de dados</h1>
 					<h2 class="portfolio">Tome decisões baseadas em estatísticas internas</h2>
