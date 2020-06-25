@@ -93,7 +93,7 @@
 		<nav id="menuMobile" class="menuMobile">
 			<a class="menuMobile" href="./index.html#home">Home</a>
 			<a class="menuMobile" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
+			<a class="menuMobile" href="./contato.php" style="color: black; font-weight: bold;">Contato</a>
 			<a class="menuMobile" href="">Blog</a>
 			<a class="menuMobile" href="./servicos.html">Serviços</a>
 		</nav>
@@ -187,15 +187,15 @@
 		<h1 class="apoio title"> Apoio </h1>
 		<div class="apoio-container sub-container">
 			<div class="apoio-item">				
-				<div class="apoio-img" style="background-image: url('./media/nusc.png');"></div>
+				<div class="apoio-img" style="background-image: url('./media/nusc.jpg');"></div>
 				<p class="apoio-desc">Contamos com o NUSC para integrar outras EJs [...]</p>
 			</div>
 			<div class="apoio-item">
-				<div class="apoio-img" style="background-image: url('./media/ufscar.svg');"></div>
+				<div class="apoio-img" style="background-image: url('./media/ufscar.jpg');"></div>
 				<p class="apoio-desc">Contamos a UFSCar que disponibiliza [...]</p>
 			</div>
 			<div class="apoio-item">
-				<div class="apoio-img" style="background-image: url('./media/df.png');"></div>
+				<div class="apoio-img" style="background-image: url('./media/df.jpg');"></div>
 				<p class="apoio-desc">Contamos com Departamento de Física - UFSCar para trabalhar ao lado de [...]</p>
 			</div>
 		</div>

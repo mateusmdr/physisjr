@@ -34,7 +34,7 @@ div.portfolio-row{
 
 a.portfolio > h1.portfolio{
 	font-size: 1.5em;
-	font-family: 'Raleway',sans-serif;
+	font-family: 'Roboto',sans-serif;
 	font-weight: bold;
 	padding: 10px 0;
 }
@@ -65,7 +65,7 @@ a.portfolio > img.portfolio {
 }
 
 a.portfolio-contato{
-	font-family: 'Raleway',sans-serif;
+	font-family: 'Roboto',sans-serif;
 	font-size: 1.8em;
 	background-color: #750000;
 	color: white;
