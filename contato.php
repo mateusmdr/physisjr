@@ -79,23 +79,23 @@
 	<!--Cabeçalho-->
 
 	<header>
-		<a href="./index.html">
-			<img class="menu" src="./media/logo.png">
+		<a href="#home">
+			<img class="menu" alt="Logo" src="./media/logo.png">
 		</a>
 		<nav class="menu">
-			<a class="menu" href="./index.html#home">Home</a>
-			<a class="menu" href="./sobre.html">Sobre</a>			
-			<a class="menu" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
-			<a class="menu" href="">Blog</a>
-			<a class="menu" href="./servicos.html">Serviços</a>
+			<a class="menu" title="Home" href="./index.html#home" >Home</a>
+			<a class="menu" title="Sobre" href="./sobre.html" style="color: black; font-weight: bold; background-color: white;">Sobre</a>			
+			<a class="menu" title="Contato" href="./contato.php">Contato</a>
+			<a class="menu" title="Blog" href="">Blog</a>
+			<a class="menu" title="Serviços" href="./servicos.html">Serviços</a>
 		</nav>
-		<img onclick="switchMenu()" class="menuMobile" src="./media/menu.svg">
+		<img onclick="switchMenu()" class="menuMobile" alt="Menu" src="./media/menu.svg">
 		<nav id="menuMobile" class="menuMobile">
-			<a class="menuMobile" href="./index.html#home">Home</a>
-			<a class="menuMobile" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" href="./contato.php" style="color: black; font-weight: bold;">Contato</a>
-			<a class="menuMobile" href="">Blog</a>
-			<a class="menuMobile" href="./servicos.html">Serviços</a>
+			<a class="menuMobile" title="Home" href="#home">Home</a>
+			<a class="menuMobile" title="Sobre" href="./sobre.html">Sobre</a>			
+			<a class="menuMobile" title="Contato" href="./contato.php" style="color: black; font-weight: bold;">Contato</a>
+			<a class="menuMobile" title="Blog" href="">Blog</a>
+			<a class="menuMobile" title="Serviços" href="./servicos.html">Serviços</a>
 		</nav>
 	</header>
 
@@ -110,21 +110,21 @@
 			<div class="contato-box-left">
 				<div class="contato-item">
 					<h3 class="contato subtitle">Email</h3>
-					<a href="mailto:contato@physisjr.com">
+					<a title="Email" href="mailto:contato@physisjr.com">
 					<img class="contato" src="./media/gmail.svg">
 					<span class="contato">contato@physisjr.com</span>
 					</a>
 				</div>
 				<div class="contato-item">
 					<h3 class="contato subtitle">Telefone</h3>
-					<a href="tel:+5531994107552">
+					<a title="Telefone" href="tel:+5531994107552">
 						<img class="contato" src="./media/phone.svg">
 						<span class="contato">(31) 99410-7552</span>
 					</a>
 				</div>
 				<div class="contato-item">
 					<h3 class="contato subtitle">WhatsApp</h3>
-					<a href="https://wa.me/5531994107552">
+					<a title="WhatsApp" href="https://wa.me/5531994107552">
 						<img class="contato" src="./media/whatsapp.svg">
 						<span class="contato">(31) 99410-7552</span>
 					</a>
@@ -187,15 +187,15 @@
 		<h1 class="apoio title"> Apoio </h1>
 		<div class="apoio-container sub-container">
 			<div class="apoio-item">				
-				<div class="apoio-img" style="background-image: url('./media/nusc.jpg');"></div>
+				<div class="apoio-img" alt="NUSC" style="background-image: url('./media/nusc.jpg');"></div>
 				<p class="apoio-desc">Contamos com o NUSC para integrar outras EJs [...]</p>
 			</div>
 			<div class="apoio-item">
-				<div class="apoio-img" style="background-image: url('./media/ufscar.jpg');"></div>
+				<div class="apoio-img" alt="UFSCar" style="background-image: url('./media/ufscar.jpg');"></div>
 				<p class="apoio-desc">Contamos a UFSCar que disponibiliza [...]</p>
 			</div>
 			<div class="apoio-item">
-				<div class="apoio-img" style="background-image: url('./media/df.jpg');"></div>
+				<div class="apoio-img" alt="DF-UFSCar" style="background-image: url('./media/df.jpg');"></div>
 				<p class="apoio-desc">Contamos com Departamento de Física - UFSCar para trabalhar ao lado de [...]</p>
 			</div>
 		</div>
@@ -204,12 +204,12 @@
 	<div class="clear"></div>
 
 	<footer class="rodape">
-		<span class="rodape"><a href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
+		<span class="rodape"><a title="flaticon" href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
 		<h1 class="rodape">Physis Jr. © 2020</h1>
 		<div class="social">
-			<a href="https://www.facebook.com/physisjr"><img class="social" src="./media/facebook.svg"></a>
-			<a href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" src="./media/instagram.svg"></a>
-			<a href="https://www.linkedin.com/company/physisjr/"><img class="social" src="./media/linkedin.svg"></a>
+			<a title="Facebook" href="https://www.facebook.com/physisjr"><img class="social" alt="Facebook" src="./media/facebook.svg"></a>
+			<a title="Instagram" href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" alt="Instagram" src="./media/instagram.svg"></a>
+			<a title="LinkedIn" href="https://www.linkedin.com/company/physisjr/"><img class="social" alt="LinkedIn" src="./media/linkedin.svg"></a>
 		</div>		
 	</footer>
 
