@@ -80,12 +80,12 @@
 
 	<header>
 		<a href="#home">
-			<img class="menu" alt="Logo" src="./media/logo.png">
+			<img class="menu" alt="Logo" src="./media/logo.jpg">
 		</a>
 		<nav class="menu">
 			<a class="menu" title="Home" href="./index.html#home" >Home</a>
-			<a class="menu" title="Sobre" href="./sobre.html" style="color: black; font-weight: bold; background-color: white;">Sobre</a>			
-			<a class="menu" title="Contato" href="./contato.php">Contato</a>
+			<a class="menu" title="Sobre" href="./sobre.html">Sobre</a>			
+			<a class="menu" title="Contato" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
 			<a class="menu" title="Blog" href="">Blog</a>
 			<a class="menu" title="Serviços" href="./servicos.html">Serviços</a>
 		</nav>
@@ -172,11 +172,11 @@
 				</div>
 			</div>
 			<div class="clear"></div>
-			<div class="contato-mapa">
-				<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
-			</div>
-			<div class="clear"></div>
 		</div>		
+		<div class="contato-mapa">
+			<iframe id="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1849.8563982098842!2d-47.88440981655645!3d-21.983983239482097!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b870e0750b98b3%3A0x836ca2811701c06d!2sPhysis%20Jr!5e0!3m2!1spt-BR!2sbr!4v1591991766483!5m2!1spt-BR!2sbr" width="100%" height="400px" frameborder="0" style="border:0;" allowfullscreen="0" aria-hidden="false" tabindex="0"></iframe>
+		</div>
+		<div class="clear"></div>
 	</div>
 
 	<div class="clear"></div>
