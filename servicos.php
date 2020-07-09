@@ -16,32 +16,13 @@
 	<!--Scripts-->
 	<script src="./js/navbar.js"></script>
 	<script src="./js/portfolio.js"></script>
+
+	<?php $pagina = "servicos"; ?>
 </head>
 
 <body>
 
-	<!--Cabeçalho-->
-
-	<header>
-		<a href="#home">
-			<img class="menu" alt="Logo" src="./media/logo.jpg">
-		</a>
-		<nav class="menu">
-			<a class="menu" title="Home" href="./index.html#home" >Home</a>
-			<a class="menu" title="Sobre" href="./sobre.html">Sobre</a>			
-			<a class="menu" title="Contato" href="./contato.php">Contato</a>
-			<a class="menu" title="Blog" href="">Blog</a>
-			<a class="menu" title="Serviços" href="./servicos.html" style="color: black; font-weight: bold; background-color: white;">Serviços</a>
-		</nav>
-		<img onclick="switchMenu()" class="menuMobile" alt="Menu" src="./media/menu.svg">
-		<nav id="menuMobile" class="menuMobile">
-			<a class="menuMobile" title="Home" href="#home">Home</a>
-			<a class="menuMobile" title="Sobre" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" title="Contato" href="./contato.php">Contato</a>
-			<a class="menuMobile" title="Blog" href="">Blog</a>
-			<a class="menuMobile" title="Serviços" href="./servicos.html" style="color: black; font-weight: bold;">Serviços</a>
-		</nav>
-	</header>
+	<?php include 'header.php'; ?>
 
 	<!--Portfolio-->
 
@@ -99,37 +80,9 @@
 
 	</div>
 
-	<!--Rodapé-->
+	<?php include 'footer.php'; ?>
 
-	<div class="apoio-section container">
-		<h1 class="apoio title"> Apoio </h1>
-		<div class="apoio-container sub-container">
-			<div class="apoio-item">				
-				<div class="apoio-img" alt="NUSC" style="background-image: url('./media/nusc.jpg');"></div>
-				<p class="apoio-desc">Contamos com o NUSC para integrar outras EJs [...]</p>
-			</div>
-			<div class="apoio-item">
-				<div class="apoio-img" alt="UFSCar" style="background-image: url('./media/ufscar.jpg');"></div>
-				<p class="apoio-desc">Contamos a UFSCar que disponibiliza [...]</p>
-			</div>
-			<div class="apoio-item">
-				<div class="apoio-img" alt="DF-UFSCar" style="background-image: url('./media/df.jpg');"></div>
-				<p class="apoio-desc">Contamos com Departamento de Física - UFSCar para trabalhar ao lado de [...]</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="clear"></div>
-
-	<footer class="rodape">
-		<span class="rodape"><a title="flaticon" href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
-		<h1 class="rodape">Physis Jr. © 2020</h1>
-		<div class="social">
-			<a title="Facebook" href="https://www.facebook.com/physisjr"><img class="social" alt="Facebook" src="./media/facebook.svg"></a>
-			<a title="Instagram" href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" alt="Instagram" src="./media/instagram.svg"></a>
-			<a title="LinkedIn" href="https://www.linkedin.com/company/physisjr/"><img class="social" alt="LinkedIn" src="./media/linkedin.svg"></a>
-		</div>		
-	</footer>
+	
 </body>
 
 </html>

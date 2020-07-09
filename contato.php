@@ -15,6 +15,8 @@
 
 	<!--Scripts-->
 	<script src="./js/navbar.js"></script>
+
+	<?php $pagina = "contato"; ?>
 </head>
 
 <body>
@@ -76,34 +78,11 @@
 
 	?>
 
-	<!--Cabeçalho-->
-
-	<header>
-		<a href="#home">
-			<img class="menu" alt="Logo" src="./media/logo.jpg">
-		</a>
-		<nav class="menu">
-			<a class="menu" title="Home" href="./index.html#home" >Home</a>
-			<a class="menu" title="Sobre" href="./sobre.html">Sobre</a>			
-			<a class="menu" title="Contato" href="./contato.php" style="color: black; font-weight: bold; background-color: white;">Contato</a>
-			<a class="menu" title="Blog" href="">Blog</a>
-			<a class="menu" title="Serviços" href="./servicos.html">Serviços</a>
-		</nav>
-		<img onclick="switchMenu()" class="menuMobile" alt="Menu" src="./media/menu.svg">
-		<nav id="menuMobile" class="menuMobile">
-			<a class="menuMobile" title="Home" href="#home">Home</a>
-			<a class="menuMobile" title="Sobre" href="./sobre.html">Sobre</a>			
-			<a class="menuMobile" title="Contato" href="./contato.php" style="color: black; font-weight: bold;">Contato</a>
-			<a class="menuMobile" title="Blog" href="">Blog</a>
-			<a class="menuMobile" title="Serviços" href="./servicos.html">Serviços</a>
-		</nav>
-	</header>
+	<?php include 'header.php'; ?>
 
 	<!--Contato-->
 
 	<div class="contato container">	
-
-		<h2 class="contato title">Contato</h2>
 
 		<div class="contato-box container">
 
@@ -111,21 +90,21 @@
 				<div class="contato-item">
 					<h3 class="contato subtitle">Email</h3>
 					<a title="Email" href="mailto:contato@physisjr.com">
-					<img class="contato" src="./media/gmail.svg">
+					<img class="contato" title="Email" alt="Email" src="./media/gmail.svg">
 					<span class="contato">contato@physisjr.com</span>
 					</a>
 				</div>
 				<div class="contato-item">
 					<h3 class="contato subtitle">Telefone</h3>
 					<a title="Telefone" href="tel:+5531994107552">
-						<img class="contato" src="./media/phone.svg">
+						<img class="contato" title="Telefone" alt="Telefone" src="./media/phone.svg">
 						<span class="contato">(31) 99410-7552</span>
 					</a>
 				</div>
 				<div class="contato-item">
 					<h3 class="contato subtitle">WhatsApp</h3>
 					<a title="WhatsApp" href="https://wa.me/5531994107552">
-						<img class="contato" src="./media/whatsapp.svg">
+						<img class="contato" title="WhatsApp" alt="WhatsApp" src="./media/whatsapp.svg">
 						<span class="contato">(31) 99410-7552</span>
 					</a>
 				</div>
@@ -137,7 +116,7 @@
 					<form method="POST">
 						<div class="input-box nome">
 							<label for="nome">Nome*</label>
-							<input type="text" name="nome" id="nome" placeholder="Nome pessoal ou organizacional" required>
+							<input type="text" name="nome" id="nome" placeholder="Nome pessoal ou da empresa" required>
 						</div>
 						<div class="input-box telefone">
 							<label for="telefone">Telefone*</label>
@@ -181,37 +160,7 @@
 
 	<div class="clear"></div>
 
-	<!--Rodapé-->
-
-	<div class="apoio-section container">
-		<h1 class="apoio title"> Apoio </h1>
-		<div class="apoio-container sub-container">
-			<div class="apoio-item">				
-				<div class="apoio-img" alt="NUSC" style="background-image: url('./media/nusc.jpg');"></div>
-				<p class="apoio-desc">Contamos com o NUSC para integrar outras EJs [...]</p>
-			</div>
-			<div class="apoio-item">
-				<div class="apoio-img" alt="UFSCar" style="background-image: url('./media/ufscar.jpg');"></div>
-				<p class="apoio-desc">Contamos a UFSCar que disponibiliza [...]</p>
-			</div>
-			<div class="apoio-item">
-				<div class="apoio-img" alt="DF-UFSCar" style="background-image: url('./media/df.jpg');"></div>
-				<p class="apoio-desc">Contamos com Departamento de Física - UFSCar para trabalhar ao lado de [...]</p>
-			</div>
-		</div>
-	</div>
-
-	<div class="clear"></div>
-
-	<footer class="rodape">
-		<span class="rodape"><a title="flaticon" href="https://www.flaticon.com">Icons from www.flaticon.com</a></span>
-		<h1 class="rodape">Physis Jr. © 2020</h1>
-		<div class="social">
-			<a title="Facebook" href="https://www.facebook.com/physisjr"><img class="social" alt="Facebook" src="./media/facebook.svg"></a>
-			<a title="Instagram" href="https://www.instagram.com/physisjr/?hl=pt-br"><img class="social" alt="Instagram" src="./media/instagram.svg"></a>
-			<a title="LinkedIn" href="https://www.linkedin.com/company/physisjr/"><img class="social" alt="LinkedIn" src="./media/linkedin.svg"></a>
-		</div>		
-	</footer>
+	<?php include 'footer.php'; ?>
 
 </body>
 

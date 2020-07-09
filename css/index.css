@@ -17,10 +17,9 @@ div#opacidade {
 }
 
 h1.apresentacao {
-	font-size: 6em;
+	font-size: 7em;
 	padding-bottom: 30px;
-	font-weight: bold;
-	font-family: 'Open Sans',sans-serif;
+	font-family: 'Roboto',sans-serif;
 	color: white;
 	text-shadow: 2px 2px black;
 }
@@ -42,7 +41,7 @@ h3.apresentacao {
 }
 
 .apresentacao-box-left {
-	width: 50%;
+	width: 60%;
 	float: left;
 	margin-top: 50px;
 }
@@ -52,11 +51,12 @@ h3.apresentacao {
 
 
 .apresentacao-box-right {
-	width: 50%;
+	width: 40%;
 	float:left;
 	background-color: #750000;
 	border-radius: 10px;
 	border: 3px solid #666;
+	padding: 10px;
 }
 
 .form-contato{
@@ -68,8 +68,8 @@ h3.apresentacao {
 .input-box {
 	padding: 10px;
 	margin: 0 auto;
-	width: 90%;
-	clear: both;
+	width: 100%;
+	float: left;
 }
 
 .input-box > input[type="text"], .input-box > input[type="email"], .input-box > input[type="tel"]  {
@@ -80,7 +80,6 @@ h3.apresentacao {
 	padding: 5px;
 	border: 1px solid grey;
 	border-radius: 5px;
-	clear: both;
 	background-color: white;
 }
 
@@ -122,9 +121,8 @@ h3.apresentacao {
 	transition: .3s;
 }
 
-.input-box.nome, .input-box.telefone {
-	width: 45%;
-	display: inline-block;
+.input-box.nome, .input-box.telefone, .input-box.email,.input-box.assunto{
+	width: 50%;
 }
 
 .apresentacao-box-right h2 {
@@ -144,18 +142,14 @@ h3.apresentacao {
 }
 
 select {
-	margin: 10px 0;
-	width: 100%;
 	height: 40px;
-	padding: 5px;
 	font-family: 'Open Sans',sans-serif;
-	font-size: 20px;
 	text-align: center;
 	float: left;
-	clear: both;
 	border-radius: 5px;
 	background-color: white;
 	color: #777;
+	width: 100%;
 }
 
 select:focus {

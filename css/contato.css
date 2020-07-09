@@ -1,14 +1,14 @@
 /*Começo do contato*/
 /*-----------------*/
 
-h2.contato {
-	padding: calc(8vh + 70px) 0 50px 0;
+.contato.container{
+		padding: calc(8vh + 30px) 0 50px 0;
 }
 
 .contato-box{
 	width: 75vw;
 	max-width: 1500px;
-	height: 600px;
+	height: 570px;
 	margin-bottom: 10px;
 	background-color: #750000;
 	border-radius: 10px;
