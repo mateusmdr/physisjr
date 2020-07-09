@@ -1,23 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<head>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0">
-	<title>Physis Jr.</title>
-
-	<!--Estilos-->
-	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/sobre.css">
-
-	<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
-
-	<!--Scripts-->
-	<script src="./js/navbar.js"></script>
-
-	<?php $pagina = "sobre"; ?>
-</head>
+<?php $pagina = "sobre"; include 'head.php'; ?>
 
 <body>
 
@@ -54,7 +38,7 @@
 
 
 	<?php include 'footer.php'; ?>
-	
+
 </body>
 
 </html>
