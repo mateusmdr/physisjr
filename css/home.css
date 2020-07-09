@@ -8,12 +8,14 @@ div.apresentacao {
 	background-attachment: fixed;
 	background-position: left;
 	text-align: center;
+	height: 85vh;
 }
 
 div#opacidade {
+	height: 85vh;
 	padding: calc(8vh + 50px) 80px calc(8vh + 65px) 80px; /*Abaixa a div para não ser sobreposta pelo header*/
 	width: 100%;
-	background-color: rgba(50,50,50,.7);
+	background-color: rgba(50,50,50,.3);
 }
 
 h1.apresentacao {
@@ -21,7 +23,7 @@ h1.apresentacao {
 	padding-bottom: 30px;
 	font-family: 'Roboto',sans-serif;
 	color: white;
-	text-shadow: 2px 2px black;
+	text-shadow: 3px 3px 2px black;
 }
 
 h2.apresentacao {
@@ -276,16 +278,16 @@ div.portfolio{
 	}
 
 	div#opacidade {
-		padding-left: 40px;
-		padding-right: 40px;
+		padding-left: 20px;
+		padding-right: 20px;
 	}
 }
 
 @media only screen and (max-width: 800px){
 	
 	div#opacidade {
-		padding-left: 20px;
-		padding-right: 20px;
+		padding-left: 10px;
+		padding-right: 10px;
 	}
 
 	ul.portfolio {
@@ -305,7 +307,7 @@ div.portfolio{
 		display: inline-block;
 		margin: 10px;
 		padding: 20px 2px;
-		width: 70%;
+		width: 90%;
 	}
 
 	div.portfolio-row {

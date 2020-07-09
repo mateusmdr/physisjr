@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php $pagina = "sobre"; include 'head.php'; ?>
+<?php $pagina = "sobre"; include '/dynamic/head.php'; ?>
 
 <body>
 
-	<?php include 'header.php'; ?>
+	<?php include '/dynamic/header.php'; ?>
 
 	<!--Sobre nós-->
 
@@ -37,7 +37,7 @@
 	<div class="clear"></div>
 
 
-	<?php include 'footer.php'; ?>
+	<?php include '/dynamic/footer.php'; ?>
 
 </body>
 

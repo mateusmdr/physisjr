@@ -153,6 +153,8 @@ a.menu{
 	line-height: 8vh; /*Centraliza os links verticalmente de maneira responsiva*/
 	border-radius: 5px; /*Arredonda a borda*/
 	transition: 0.3s;
+	box-sizing: content-box;
+	width: 80px;
 }
 
 a.menu:hover {

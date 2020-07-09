@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php $pagina = "contato"; include 'head.php'; ?>
+<?php $pagina = "contato"; include '/dynamic/head.php'; ?>
 
 <body>
 
@@ -62,7 +62,7 @@
 
 	?>
 
-	<?php include 'header.php'; ?>
+	<?php include '/dynamic/header.php'; ?>
 
 	<!--Contato-->
 
@@ -144,7 +144,7 @@
 
 	<div class="clear"></div>
 
-	<?php include 'footer.php'; ?>
+	<?php include '/dynamic/footer.php'; ?>
 
 </body>
 
