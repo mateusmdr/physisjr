@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php $pagina = "servicos"; include '/dynamic/head.php'; ?>
+<?php $pagina = "servicos"; include 'dynamic/head.php'; ?>
 
 <body>
 
-	<?php include '/dynamic/header.php'; ?>
+	<?php include 'dynamic/header.php'; ?>
 
 	<!--Portfolio-->
 
@@ -63,7 +63,7 @@
 
 	</div>
 
-	<?php include '/dynamic/footer.php'; ?>
+	<?php include 'dynamic/footer.php'; ?>
 
 
 </body>

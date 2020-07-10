@@ -1,13 +1,13 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 
-<?php $pagina = "home"; include '/dynamic/head.php'; ?>
+<?php $pagina = "home"; include 'dynamic/head.php'; ?>
 
 <body>
 
 	<div id="home"></div>
 
-	<?php include '/dynamic/header.php'; ?>
+	<?php include 'dynamic/header.php'; ?>
 
 	<!--Apresentação-->
 	<div class="apresentacao container">
@@ -126,7 +126,7 @@
 
 	</div>
 
-	<?php include '/dynamic/footer.php'; ?>
+	<?php include 'dynamic/footer.php'; ?>
 
 </body>
 </html>
