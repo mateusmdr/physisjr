@@ -9,6 +9,11 @@
 	<meta name="keywords" content="palavras-chave,separadas,por,virgula">
 	<meta name="author" content="Physis Jr.">
 
+	<meta property="og:title" content="Jaquelini Amaral | Nutrição Comportamental | São Carlos">
+	<meta property="og:description" content="A Jaquelini Amaral é uma nutricionista comportamental renomada que atende em São Carlos">
+	<meta property="og:type" content="website">
+	<meta property="og:url" content="https://jaquelininutri.fulnessmkt.com.br/">
+
 	<!--Estilos-->
 	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
 	<link rel="stylesheet" type="text/css" href="./css/style.css">
