@@ -18,6 +18,16 @@
 	</div>
 </div>
 
+<div class="apoio-section container">
+	<div class="apoio-container sub-container">
+		<h1 class="apoio title"> Parcerias </h1>
+		<div class="parceria-item">				
+			<div class="apoio-img" alt="caAndMa" style="background-image: url('./media/CaAndMa.png');"></div>
+			<p class="apoio-desc">Contamos com o NUSC para integrar outras EJs [...]</p>
+		</div>
+	</div>
+</div>
+
 <div class="clear"></div>
 
 <footer class="rodape">

@@ -8,17 +8,6 @@
 	<?php
 		date_default_timezone_set("America/Sao_Paulo");
 
-		function assunto($ref) {
-			if (isset($_GET["assunto"])){
-				if ($ref == $_GET["assunto"]) {
-					return "selected";
-				}else {
-					return "";
-				}
-			}
-		}
-
-		isset($_GET["assunto"])?$assunto=$_GET["assunto"]:"";
 		if(isset($_POST["nome"])){
 
 			$nome = $_POST["nome"];
@@ -55,7 +44,7 @@
 				</div>
 			";
 
-	      	$assuntoEmail = "Contato pelo site: $nome";
+	      	$assuntoEmail = "Contato pelo site: ".$nome;
       	
 			$enviaremail = mail("mateusmendoncadr@gmail.com",$assuntoEmail,$mensagem,$headers);
 		}
@@ -110,18 +99,6 @@
 						<div class="input-box">
 							<label for="email">Email*</label>
 							<input type="email" name="email" id="email" placeholder="Ex: contato@physisjr.com" required>
-						</div>
-						<div class="input-box">
-							<select name="assunto" id="assunto" required>
-								<option <?php echo ((!isset($_GET["assunto"]))?"selected":"") ?> disabled value="">Assunto*</option>
-								<option <?php echo (assunto("estoque")); ?> value="Controle de Estoque">Controle de Estoque</option>
-								<option <?php echo (assunto("websites")); ?> value="Websites">Websites</option>
-								<option <?php echo (assunto("eletronica")); ?> value="Soluções em eletrônica">Soluções em eletrônica</option>
-								<option <?php echo (assunto("mobile")); ?> value="Aplicativos mobile">Aplicativos mobile</option>
-								<option <?php echo (assunto("planilhas")); ?> value="Cursos de Excel">Cursos de Planilhas</option>
-								<option <?php echo (assunto("dados")); ?> value="Análise de dados">Análise de dados</option>
-								<option  value="Outros">Outros (descreva abaixo)</option>
-							</select>
 						</div>
 
 						<div class="input-box">

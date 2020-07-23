@@ -1,183 +1,131 @@
 /*Começo da apresentação*/
 /*----------------------*/
 
-div.apresentacao {
-	background-image: url("../media/background.jpg");
-	background-repeat: no-repeat;
+.apresentacao-container{
+	
+	
+	background-image: url('../media/background.jpg');
 	background-size: cover;
-	background-attachment: fixed;
-	background-position: left;
-	text-align: center;
+	background-repeat: no-repeat;
+	background-position: center;
+	
+}
+
+.apresentacao-container .center {
+	height: 100%;
+	position: relative;
+}
+
+#opacidade {
+	padding-top: calc(8vh + 30px);
+	background-color: rgba(50,50,50,.7);
 	height: 85vh;
 }
 
-div#opacidade {
-	height: 85vh;
-	padding: calc(8vh + 50px) 80px calc(8vh + 65px) 80px; /*Abaixa a div para não ser sobreposta pelo header*/
+.apresentacao-box {
+	display: flex;
 	width: 100%;
-	background-color: rgba(50,50,50,.3);
-}
-
-h1.apresentacao {
-	font-size: 7em;
-	padding-bottom: 30px;
-	font-family: 'Roboto',sans-serif;
-	color: white;
-	text-shadow: 3px 3px 2px black;
-}
-
-h2.apresentacao {
-	font-size: 2em;
-	font-weight: normal;
-	font-family: 'Open Sans',sans-serif;
-	color: white;
-}
-
-h3.apresentacao {
-	display: inline-block;
-	font-size: 2em;
-	font-weight: normal;
-	font-family: 'Open Sans',sans-serif;
-	color: white;
-	margin-top: 70px;
+	align-items: center;
+	height: 100%;
 }
 
 .apresentacao-box-left {
-	width: 60%;
-	float: left;
-	margin-top: 50px;
+	width: 70%;
 }
-
-/*Formulário*/
-
-
 
 .apresentacao-box-right {
-	width: 40%;
-	float:left;
-	background-color: #750000;
+	position: relative;
+	width: 30%;
+	max-width: 500px;
+	padding-right: 50px;
+	box-sizing: content-box;
 	border-radius: 10px;
-	border: 3px solid #666;
-	padding: 10px;
 }
 
-.form-contato{
-	width: 100%;
-	height: 100%;
-	padding: 10px;
+.arrow {
+	background-image: url('../media/down-arrow.svg');
+	width: 75px;
+	height: 75px;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	position: absolute;
+	left: 50%;
+	top: 100%;
+	transform: translateX(-50%) translateY(-50%);
 }
 
-.input-box {
-	padding: 10px;
-	margin: 0 auto;
-	width: 100%;
-	float: left;
+.apresentacao-box-left h1 {
+	text-align: left;
+	color: white;
+	font-size: 4em;
+	font-weight: bold;
+	padding-bottom: 20px;
 }
 
-.input-box > input[type="text"], .input-box > input[type="email"], .input-box > input[type="tel"]  {
+.apresentacao-box-left h2 {
+	text-align: left;
+	color: white;
+	font-size: 2em;
+}
+
+.apresentacao-box-left hgroup {
+	margin-right: 100px;
+	border-radius: 20px;
+}
+
+.form-title {
+	text-align: center;
+	color: white;
+	font-weight: bold;
+	margin-bottom: 20px;
+	font-family: 'Open Sans',sans-serif;
+}
+
+.form-contato input[type="text"],.form-contato input[type="email"],.form-contato input[type="tel"],.form-contato textarea {
 	width: 100%;
-	height: 40px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: .8em;
-	padding: 5px;
-	border: 1px solid grey;
+	padding: 10px 5px;
 	border-radius: 5px;
-	background-color: white;
-}
-
-.input-box > textarea {
-	width: 100%;
-	height: 100px;
-	resize: none;
-	padding: 5px;
-	font-family: 'Open Sans', sans-serif;
-	font-size: 1em;
-	border: 1px solid grey;
-	border-radius: 5px;
-	background-color: white;
+	border: 1px solid #666;
+	font-family: 'Open Sans',sans-serif;
+	margin-bottom: 20px;
+	margin-top: 5px;
+	color: black;
 }
 
 :focus {
-	background-color: white;
+	outline: none;
 }
 
-.input-box > input[type="submit"]{
-	height: 50px;
-	font-size: 1.5em;
-	font-family: 'Open Sans', sans-serif;
+.form-contato input[type="submit"] {
+	display: block;
+	margin: 0 auto;
+	padding: 15px 20px;
+	border-radius: 50px;
+	border: 2px solid white;
+	background-color: #750000;
+	color: white;
 	font-weight: bold;
+	font-size: 16px;
+	cursor: pointer;
+	transition: .5s;
+}
+
+.form-contato textarea {
+	resize: none;
+	padding-bottom: 50px;
+}
+
+.form-contato input[type="submit"]:hover {
 	background-color: white;
 	color: black;
-	border: 1px groove black;
-	border-radius: 5px;
-	cursor: pointer;
-	transition: .3s;
-	clear: both;
-	box-sizing: content-box;
-	padding: 0;
-	padding: 2px 10px;
+	transition: .5s;
 }
 
-.input-box > input[type="submit"]:hover {
-	padding: 2px 15px;
-	transition: .3s;
-}
-
-.input-box.nome, .input-box.telefone, .input-box.email,.input-box.assunto{
-	width: 50%;
-}
-
-.apresentacao-box-right h2 {
-	color: white;
-}
-
-.input-box > label{
-	position: relative;
-	bottom: 3px;
-	font-family: 'Open Sans',sans-serif;
+.form-contato label {
+	color:white;
+	font-weight: bold;
 	font-size: 1.2em;
-	color: white;
-	font-weight: bold;
-	clear: both;
-	text-align: left;
-	display: block;
-}
-
-select {
-	height: 40px;
-	font-family: 'Open Sans',sans-serif;
-	text-align: center;
-	float: left;
-	border-radius: 5px;
-	background-color: white;
-	color: #777;
-	width: 100%;
-}
-
-select:focus {
-	background-color: white;
-	border: 2px solid black;
-}
-
-option[disabled] {
-	font-family: 'Open Sans',sans-serif;
-	font-weight: bold;
-	display: none;
-}
-
-/*Fim do formulário*/
-
-
-@media only screen and (max-width: 800px){
-	h1.apresentacao {
-		font-size: 3em;
-	}
-	h2.apresentacao{
-		font-size: 1em;
-	}
-	h3.apresentacao {
-		font-size: 1.2em;
-	}
 }
 
 /*Fim da apresentação*/
@@ -204,6 +152,7 @@ a.portfolio{
 	border-radius: 5px;
 	transition: 0.5s;
 	position: relative;
+	cursor: pointer;
 }
 
 a.portfolio:hover {
@@ -231,14 +180,14 @@ a.portfolio > h2.portfolio{
 
 a.portfolio > h3.portfolio {
 	display: inline-block;
-	padding: 5px;
+	padding: 10px 15px;
+	border-radius: 40px;
 	font-size: 1.5em;
 	font-family: 'Open Sans',sans-serif;
 	color: white;
 	background-color: #750000;
 	margin-top: 30px;
 	font-weight: bold;
-	border-radius: 5px;
 	position: relative;
 	transition: 0.5s;
 }
@@ -251,39 +200,75 @@ a.portfolio > img.portfolio {
 a.portfolio-contato{
 	font-family: 'Roboto',sans-serif;
 	font-size: 1.8em;
+	padding: 15px 50px;
+	border-radius: 50px;
+	border: 2px solid transparent;
 	background-color: #750000;
 	color: white;
-	padding: 10px;
-	border-radius: 5px;
 	font-weight: 600;
 	transition: 0.5s;
 }
 
 a.portfolio-contato:hover {
-	background-color: #8f0000;
+	background-color: white;
+	border: 2px solid black;
+	color: black;
 	transition: 0.5s;
 }
 
 div.portfolio{
-	margin-bottom: 20px;
+	margin: 30px 0;
 }
 
 @media only screen and (max-width: 1024px), (max-width: 800px){
-	h1.apresentacao {
-		font-size: 4em;
-	}
 
 	.apresentacao-box-left {
 		margin-top: 50px;
+		width: 100%;
+		margin-right: 0;
 	}
 
-	div#opacidade {
-		padding-left: 20px;
-		padding-right: 20px;
+	.apresentacao-box-left hgroup {
+		margin: 0 auto;
+		text-align: center;
+		padding: 0 20px;
+	}
+
+	.apresentacao-box-left h1{
+		font-size: 3em;
+		width: 100%;
+		text-align: center;
+	}
+
+	.apresentacao-box-left h2 {
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+	}
+
+	.arrow {
+		width: 50px;
+		height: 50px;
+	}
+
+	.apresentacao-box-right {
+		display: none;
 	}
 }
 
 @media only screen and (max-width: 800px){
+
+	.apresentacao-box-left h1{
+		font-size: 2em;
+		width: 100%;
+		text-align: center;
+	}
+
+	.apresentacao-box-left h2 {
+		font-size: 1.5em;
+		width: 100%;
+		text-align: center;
+	}
 	
 	div#opacidade {
 		padding-left: 10px;

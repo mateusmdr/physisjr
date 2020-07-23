@@ -5,6 +5,10 @@
 		padding: calc(8vh + 30px) 0 50px 0;
 }
 
+#contato-header:hover {
+	border: 2px solid transparent;
+}
+
 .contato-box{
 	width: 75vw;
 	max-width: 1500px;
