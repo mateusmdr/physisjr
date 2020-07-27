@@ -12,7 +12,6 @@
 
 			$nome = $_POST["nome"];
 			$email = $_POST["email"];
-			$assunto = $_POST["assunto"];
 			$observacoes = $_POST["observacoes"];
 			$data_envio = date('d/m/Y');
 			$hora_envio = date('H:i:s');
@@ -34,9 +33,6 @@
 					</div>
 					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
 						<b>Email:</b> $email\r\n<br>
-					</div>
-					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;text-align: left;padding:5px;'>
-						<b>Assunto:</b> $assunto\r\n<br>
 					</div>
 					<div style='font-family: tahoma,sans-serif;font-size:1.2em;margin:5px 0;width:50%;text-align: justify;padding:5px;'>
 						<b>Observações:</b> $observacoes\r\n<br>
