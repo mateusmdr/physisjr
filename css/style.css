@@ -117,6 +117,9 @@ header > nav {
 
 .menuMobile {
 	display: none;
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
 }
 
 img.menu,header>a.menu {

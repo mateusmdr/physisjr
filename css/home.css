@@ -97,6 +97,7 @@
 	margin-bottom: 20px;
 	margin-top: 5px;
 	color: black;
+	box-sizing: border-box;
 }
 
 :focus {
@@ -232,6 +233,7 @@ div.portfolio{
 		margin-top: 50px;
 		width: 100%;
 		margin-right: 0;
+		margin-bottom: 50px;
 	}
 
 	.apresentacao-box-left hgroup {
@@ -258,7 +260,11 @@ div.portfolio{
 	}
 
 	.apresentacao-box-right {
-		display: none;
+		width: 95%;
+		padding: 0;
+	}
+	.apresentacao-box {
+		flex-direction: column;
 	}
 }
 
@@ -327,12 +333,26 @@ div.portfolio{
 	}
 
 	.apresentacao-box-right {
-		display: none;
+		width: 95%;
+		padding: 0;
 	}
 
 	.apresentacao-box-left {
 		width: 100%;
 		margin-top: 20px;
+		margin-bottom: 50px;
+	}
+
+	.apresentacao-box {
+		flex-direction: column;
+	}
+
+	#opacidade {
+		height: auto;
+		padding-bottom: 50px;
+	}
+	h2.portfolio {
+		max-width: 96%;
 	}
 }
 
