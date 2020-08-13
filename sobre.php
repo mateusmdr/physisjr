@@ -11,7 +11,7 @@
 
 	<div class="sobre sub-container">
 		<h2 class="sobre title">Quem somos</h2>
-		<p class="sobre">A Physis Jr. é a empresa júnior do curso de Engenharia Física da UFSCar - São Carlos.
+		<p class="sobre">A Physis Jr. é a primeira empresa júnior do curso de Engenharia Física do Brasil, sediada na UFSCar - São Carlos.
 		</p>
 		<p class="sobre">
 			Nós fornecemos soluções inovadoras e eficazes a baixo custo. Para isso, empregamos a multidisciplinaridade dos conhecimentos adquiridos durante a graduação, juntamente com a bagagem trazida pelos membros dos diversos cursos da UFSCar para a realização de projetos.

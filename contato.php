@@ -42,7 +42,7 @@
 
 	      	$assuntoEmail = "Contato pelo site: ".$nome;
       	
-			$enviaremail = mail("mateusmendoncadr@gmail.com",$assuntoEmail,$mensagem,$headers);
+			$enviaremail = mail("contato@physisjr.com",$assuntoEmail,$mensagem,$headers);
 		}
 
 	?>
@@ -102,7 +102,7 @@
 							<textarea name="observacoes" id="observacoes" placeholder="Escreva aqui sua mensagem..." required></textarea>
 						</div>
 						<div class="input-box">
-							<input type="submit" value="Pedir meu projeto">
+							<input type="submit" value="Peça seu orçamento">
 						</div>
 					</form>
 				</div>

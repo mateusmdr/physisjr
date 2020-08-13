@@ -14,7 +14,10 @@
 .apresentacao-container .center {
 	height: 100%;
 	position: relative;
+	max-width: 1500px;
 }
+
+
 
 #opacidade {
 	padding-top: calc(8vh + 30px);
@@ -30,12 +33,12 @@
 }
 
 .apresentacao-box-left {
-	width: 70%;
+	width: 75%;
 }
 
 .apresentacao-box-right {
 	position: relative;
-	width: 30%;
+	width: 25%;
 	max-width: 500px;
 	padding-right: 50px;
 	box-sizing: content-box;
@@ -61,12 +64,15 @@
 	font-size: 4em;
 	font-weight: bold;
 	padding-bottom: 20px;
+	text-align: center;
+	text-transform: uppercase;
 }
 
 .apresentacao-box-left h2 {
 	text-align: left;
 	color: white;
 	font-size: 2em;
+	text-align: center;
 }
 
 .apresentacao-box-left hgroup {
@@ -167,7 +173,7 @@ div.portfolio-row{
 
 a.portfolio > h1.portfolio{
 	font-size: 1.5em;
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-weight: bold;
 	padding: 10px 0;
 }
@@ -198,7 +204,7 @@ a.portfolio > img.portfolio {
 }
 
 a.portfolio-contato{
-	font-family: 'Roboto',sans-serif;
+	font-family: 'Open Sans',sans-serif;
 	font-size: 1.8em;
 	padding: 15px 50px;
 	border-radius: 50px;

@@ -16,7 +16,7 @@
 				<div class="apresentacao-box">
 					<div class="apresentacao-box-left">
 						<hgroup>
-							<h1>Foco no resultado</h1>
+							<h1>Soluções em Tecnologia</h1>
 							<h2>Realizando projetos de baixo custo desde 2006</h2>
 						</hgroup>
 					</div>
@@ -43,12 +43,12 @@
 									<textarea name="observacoes" id="observacoes" placeholder="Escreva aqui sua mensagem..." required></textarea>
 								</div>
 								<div class="input-box">
-									<input type="submit" value="Pedir meu projeto">
+									<input type="submit" value="Peça seu orçamento">
 								</div>
 							</form>
 						</div>
 					</div>
-					<a href="./index.php#servicos"><div class="arrow"></div></a>			
+								
 				</div>
 				
 				<div class="clear"></div>
