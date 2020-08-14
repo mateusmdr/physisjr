@@ -42,7 +42,14 @@
 
 	      	$assuntoEmail = "Contato pelo site: ".$nome;
       	
-			$enviaremail = mail("contato@physisjr.com",$assuntoEmail,$mensagem,$headers);
+			$enviaremail = mail("mateusmendoncadr@gmail.com",$assuntoEmail,$mensagem,$headers);
+			?>
+				<pre>
+					<?php
+						var_dump($enviaremail);
+					?>
+				</pre>
+			<?php
 		}
 
 	?>

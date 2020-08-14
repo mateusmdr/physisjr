@@ -62,6 +62,8 @@ img.galeria {
 		width: 40vh;
 		height: calc(3 / 4 * 40vh);
 		display: block;
+		float: none;
+		margin: 10px auto;
 	}
 	div.galeria {
 		width: 100%;

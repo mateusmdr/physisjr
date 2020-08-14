@@ -17,6 +17,7 @@
 	background-color: #750000;
 	border-radius: 10px;
 	border: 2px solid rgba(200,200,200,.8);
+	display: flex;
 }
 
 .contato-box-left {
@@ -201,6 +202,7 @@ img.contato {
 	div.contato-box {
 		height: auto;
 		margin-bottom: 50px;
+		flex-direction: column-reverse;
 	}
 
 	.contato-item > a > span {
@@ -219,7 +221,9 @@ img.contato {
 		display: block;
 		float: none;
 		border-right: 0;
-		border-bottom: 4px dotted white;
+		border-top: 4px dotted white;
+		box-sizing: content-box;
+		padding-top: 20px;
 	}
 
 	.contato-box-right {
@@ -238,7 +242,7 @@ img.contato {
 	}
 
 	.input-box > input[type="submit"]{
-		font-size: 1.2em;
+		font-size: 1em;
 	}
 
 	.input-box > textarea {

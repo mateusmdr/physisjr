@@ -22,7 +22,6 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 		<a class="menuMobile" title="Home" href="index.php#home" <?php echo($pagina=="home"?"style='color: black; font-weight: bold;'":""); ?> >Home</a>
 		<a class="menuMobile" title="Sobre" href="./sobre.php" <?php echo($pagina=="sobre"?"style='color: black; font-weight: bold;'":""); ?> >Sobre</a>			
 		<a class="menuMobile" title="Contato" href="./contato.php" <?php echo($pagina=="contato"?"style='color: black; font-weight: bold;'":""); ?> >Contato</a>
-		<a class="menuMobile" title="Blog" href="">Blog</a>
-		<a class="menuMobile" title="Serviços" href="./servicos.php" <?php echo($pagina=="servicos"?"style='color: black; font-weight: bold;'":""); ?> >Serviços</a>
+		<a class="menuMobile" title="Blog" href="https://medium.com/@physisjr">Blog</a>
 	</nav>
 </header>

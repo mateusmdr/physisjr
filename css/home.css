@@ -22,7 +22,8 @@
 #opacidade {
 	padding-top: calc(8vh + 30px);
 	background-color: rgba(50,50,50,.7);
-	height: 85vh;
+	height: auto;
+	padding-bottom: 30px;
 }
 
 .apresentacao-box {
@@ -37,7 +38,6 @@
 }
 
 .apresentacao-box-right {
-	position: relative;
 	width: 25%;
 	max-width: 500px;
 	padding-right: 50px;
