@@ -16,7 +16,7 @@
 	margin-bottom: 10px;
 	background-color: #750000;
 	border-radius: 10px;
-	border: 2px solid rgba(200,200,200,.8);
+	border: 1px solid rgba(220,220,220,.8);
 	display: flex;
 }
 
@@ -59,6 +59,7 @@
 	border-radius: 5px;
 	clear: both;
 	background-color: white;
+	border: 1px solid #ccc;
 }
 
 .input-box > textarea {
@@ -174,17 +175,12 @@ h3.contato {
 	text-decoration: underline;
 }
 
-.contato-mapa {
+#map {
 	width: 75vw;
 	max-width: 1500px;
 	margin: 0 auto;
 	height: 404px;
 	border: 2px solid #750000;
-	border-right: 3px solid #750000;
-	border-radius: 10px;
-}
-
-iframe#mapa {
 	border-radius: 10px;
 }
 
@@ -195,7 +191,7 @@ img.contato {
 }
 
 @media only screen and (max-width: 1024px) {
-	.contato-right, .contato-mapa, iframe#mapa {
+	.contato-right, #map {
 		display: none;
 	}
 
