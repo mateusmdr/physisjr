@@ -6,8 +6,10 @@
 <body>
 
 	<div id="home"></div>
-
+	<?php include 'dynamic/form.php'?>
 	<?php include 'dynamic/header.php'; ?>
+	
+	<aside id="success"></aside>
 
 	<!--Apresentação-->
 	<div class="apresentacao-container">
@@ -24,7 +26,7 @@
 					<div class="apresentacao-box-right">
 						<div class="form-contato">
 							<h2 class="form-title subtitle">Entre em contato</h2>				
-							<form method="POST" action="./contato.php">
+							<form method="POST" action=".">
 								<div class="input-box nome">
 									<label for="nome">NOME*</label>
 									<input type="text" name="nome" id="nome" placeholder="Nome pessoal ou da empresa" required>

@@ -11,19 +11,6 @@
 		'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 		})(window,document,'script','dataLayer','GTM-M884SX2');</script>
 	<!-- End Google Tag Manager -->
-
-	<!-- Hotjar Tracking Code for physisjr.com -->
-	<script>
-		(function(h,o,t,j,a,r){
-			h.hj=h.hj||function(){(h.hj.q=h.hj.q||[]).push(arguments)};
-			h._hjSettings={hjid:1942966,hjsv:6};
-			a=o.getElementsByTagName('head')[0];
-			r=o.createElement('script');r.async=1;
-			r.src=t+h._hjSettings.hjid+j+h._hjSettings.hjsv;
-			a.appendChild(r);
-		})(window,document,'https://static.hotjar.com/c/hotjar-','.js?sv=');
-	</script>
-
 	
 	<!--Tags para SEO-->
 	<meta name="description" content="A Physis Jr. oferece soluções inovadoras e eficazes a baixo custo.">
@@ -36,16 +23,36 @@
 	<meta property="og:url" content="">
 
 	<!--Estilos-->
-	<link rel="stylesheet" type="text/css" href="./css/minireset.css">
-	<link rel="stylesheet" type="text/css" href="./css/style.css">
-	<link rel="stylesheet" type="text/css" href="./css/<?php echo $pagina; ?>.css">
+	<?php
+		if($pagina!="home"){?>
+			<link rel="stylesheet" type="text/css" href="../css/minireset.css">
+			<link rel="stylesheet" type="text/css" href="../css/style.css">
+			<link rel="stylesheet" type="text/css" href="../css/<?php echo $pagina; ?>.css">
+	<?php } else { ?>
+		<link rel="stylesheet" type="text/css" href="./css/minireset.css">
+		<link rel="stylesheet" type="text/css" href="./css/style.css">
+		<link rel="stylesheet" type="text/css" href="./css/<?php echo $pagina; ?>.css">
+	<?php } ?>
 
 	<!--Favicon-->
-	<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+		<?php if($pagina=="home"){ ?>
+			<link rel="shortcut icon" type="image/x-icon" href="./media/favicon.ico">
+		<?php }else { ?>
+			<link rel="shortcut icon" type="image/x-icon" href="../media/favicon.ico">
+		<?php } ?>
 
 	<!--Scripts-->
-	<script src="./js/navbar.js"></script>
-	<?php echo($pagina=="home"?"<script src='./js/portfolio.js'></script>":"");?>
+	<?php 
+		if($pagina=="home") { ?>
+			<script src='./js/portfolio.js'></script>
+			<script src='./js/jquery.js'></script>
+			<script src="./js/navbar.js"></script>
+		<?php }elseif ($pagina=="contato") { ?>
+			<script src='../js/jquery.js'></script>
+			<script src="../js/navbar.js"></script>
+		<?php }else { ?>
+			<script src="../js/navbar.js"></script>
+		<?php } ?>
 
 	<style>
 		/*fontes*/
@@ -57,6 +64,14 @@
 		font-display: swap;
 		src: local('Open Sans Regular'), local('OpenSans-Regular'), url(https://fonts.gstatic.com/s/opensans/v17/mem8YaGs126MiZpBA-UFVZ0b.woff2) format('woff2');
 		unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+		}
+		@font-face {
+			font-family: 'Open Sans';
+			font-style: normal;
+			font-weight: 600;
+			font-display: swap;
+			src: local('Open Sans SemiBold'), local('OpenSans-SemiBold'), url(https://fonts.gstatic.com/s/opensans/v17/mem5YaGs126MiZpBA-UNirkOUuhp.woff2) format('woff2');
+			unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
 		}
 	</style>
 

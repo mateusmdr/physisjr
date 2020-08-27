@@ -1,8 +1,12 @@
 /*Começo do sobre nós*/
 /*-------------------*/
 
+h2.sobre.title {
+	padding-top: 0;
+}
+
 div.sobre{
-	padding: 50px 0;
+	padding-bottom: 20px;
 	padding-top: calc(8vh + 20px);
 }
 
@@ -19,11 +23,11 @@ p.sobre:nth-of-type(3),p.sobre:nth-of-type(4){
 }
 
 h3.sobre {
+	padding: 20px 0;
 	font-size: 2.5em;
 	font-weight: bold;
 	font-family: 'Open Sans',sans-serif;
 	color: #750000;
-	margin-top: 50px;
 }
 
 
@@ -56,6 +60,48 @@ img.galeria {
 		width: calc(40px + 80vw);
 	}
 */
+
+/*Valores*/
+
+	.valor-image img {
+		width: 75px;
+		height: 75px;
+	}
+
+	.itens-valores {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		align-items: flex-start;
+		margin: 0 auto;
+		justify-content: space-around;
+		width: 96%;
+		max-width: 1200px;
+		padding-top: 50px;
+	}
+
+	.item-valor {
+		display: inline-block;
+		width: 20vw;
+		max-width: 300px;
+		padding: 30px 0;
+	}
+
+	.item-valor .title-valor {
+		font-size: 1.2em;
+		font-weight: 600;
+		padding: 10px 0;
+	}
+
+	.item-valor .valor-description {
+		max-width: 200px;
+		margin: 10px auto 0 auto;
+		text-align: center;
+		font-size: .9em;
+		font-family: 'Open Sans',sans-serif;
+	}
+
+/***/
 
 @media only screen and (max-width: 800px){
 	img.galeria {
